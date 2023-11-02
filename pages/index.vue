@@ -45,7 +45,7 @@ export default {
                   <div class="card">
                     <a href="timeline-event.html">
                       <div class="card-media h-32">
-                        <img src="../assets/images/events/img-3.jpg" alt="">
+                        <img src="../public/assets/images/events/img-3.jpg" alt="">
                         <div class="card-overly"></div>
                       </div>
                     </a>
@@ -69,7 +69,7 @@ export default {
                   <div class="card">
                     <a href="timeline-event.html">
                       <div class="card-media h-32">
-                        <img src="../assets/images/events/img-2.jpg" alt="">
+                        <img src="../public/assets/images/events/img-2.jpg" alt="">
                         <div class="card-overly"></div>
                       </div>
                     </a>
@@ -94,7 +94,7 @@ export default {
                   <div class="card">
                     <a href="timeline-event.html">
                       <div class="card-media h-32">
-                        <img src="../assets/images/events/img-1.jpg" alt="">
+                        <img src="../public/assets/images/events/img-1.jpg" alt="">
                         <div class="card-overly"></div>
                       </div>
                     </a>
@@ -118,7 +118,7 @@ export default {
                   <div class="card">
                     <a href="timeline-event.html">
                       <div class="card-media h-32">
-                        <img src="../assets/images/events/img-4.jpg" alt="">
+                        <img src="../public/assets/images/events/img-4.jpg" alt="">
                         <div class="card-overly"></div>
                       </div>
                     </a>
@@ -143,7 +143,7 @@ export default {
                   <div class="card">
                     <a href="timeline-event.html">
                       <div class="card-media h-32">
-                        <img src="../assets/images/events/img-3.jpg" alt="">
+                        <img src="../public/assets/images/events/img-3.jpg" alt="">
                         <div class="card-overly"></div>
                       </div>
                     </a>
@@ -192,7 +192,7 @@ export default {
                 <li class="md:w-1/5 sm:w-1/3 w-1/2">
                   <a href="#">
                     <div class="relative rounded-lg overflow-hidden">
-                      <img src="../assets/images/events/listing-1.jpg" alt="" class="h-36 w-full object-cover">
+                      <img src="../public/assets/images/events/listing-1.jpg" alt="" class="h-36 w-full object-cover">
                       <div class="w-full bottom-0 absolute left-0 bg-gradient-to-t from-black/60 pt-10">
                         <div class="text-white p-5">
                           <div class="text-sm font-light"> Miami  </div>
@@ -205,7 +205,7 @@ export default {
                 <li class="md:w-1/5 sm:w-1/3 w-1/2">
                   <a href="#">
                     <div class="relative rounded-lg overflow-hidden">
-                      <img src="../assets/images/events/listing-2.jpg" alt="" class="h-36 w-full object-cover">
+                      <img src="../public/assets/images/events/listing-2.jpg" alt="" class="h-36 w-full object-cover">
                       <div class="w-full bottom-0 absolute left-0 bg-gradient-to-t from-black/60 pt-10">
                         <div class="text-white p-5">
                           <div class="text-sm font-light">  Florida  </div>
@@ -218,7 +218,7 @@ export default {
                 <li class="md:w-1/5 sm:w-1/3 w-1/2">
                   <a href="#">
                     <div class="relative rounded-lg overflow-hidden">
-                      <img src="../assets/images/events/listing-3.jpg" alt="" class="h-36 w-full object-cover">
+                      <img src="../public/assets/images/events/listing-3.jpg" alt="" class="h-36 w-full object-cover">
                       <div class="w-full bottom-0 absolute left-0 bg-gradient-to-t from-black/60 pt-10">
                         <div class="text-white p-5">
                           <div class="text-sm font-light">   London  </div>
@@ -231,7 +231,7 @@ export default {
                 <li class="md:w-1/5 sm:w-1/3 w-1/2">
                   <a href="#">
                     <div class="relative rounded-lg overflow-hidden">
-                      <img src="../assets/images/events/listing-4.jpg" alt="" class="h-36 w-full object-cover">
+                      <img src="../public/assets/images/events/listing-4.jpg" alt="" class="h-36 w-full object-cover">
                       <div class="w-full bottom-0 absolute left-0 bg-gradient-to-t from-black/60 pt-10">
                         <div class="text-white p-5">
                           <div class="text-sm font-light">   Dubai  </div>
@@ -244,7 +244,7 @@ export default {
                 <li class="md:w-1/5 sm:w-1/3 w-1/2">
                   <a href="#">
                     <div class="relative rounded-lg overflow-hidden">
-                      <img src="../assets/images/events/listing-5.jpg" alt="" class="h-36 w-full object-cover">
+                      <img src="../public/assets/images/events/listing-5.jpg" alt="" class="h-36 w-full object-cover">
                       <div class="w-full bottom-0 absolute left-0 bg-gradient-to-t from-black/60 pt-10">
                         <div class="text-white p-5">
                           <div class="text-sm font-light"> Turkey </div>
@@ -257,7 +257,7 @@ export default {
                 <li class="md:w-1/5 sm:w-1/3 w-1/2">
                   <a href="#">
                     <div class="relative rounded-lg overflow-hidden">
-                      <img src="../assets/images/events/listing-1.jpg" alt="" class="h-36 w-full object-cover">
+                      <img src="../public/assets/images/events/listing-1.jpg" alt="" class="h-36 w-full object-cover">
                       <div class="w-full bottom-0 absolute left-0 bg-gradient-to-t from-black/60 pt-10">
                         <div class="text-white p-5">
                           <div class="text-sm font-light"> Miami  </div>
@@ -288,7 +288,7 @@ export default {
             <div class="card">
               <a href="timeline-event.html">
                 <div class="card-media h-32">
-                  <img src="../assets/images/events/img-1.jpg" alt="">
+                  <img src="../public/assets/images/events/img-1.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
               </a>
@@ -311,7 +311,7 @@ export default {
             <div class="card">
               <a href="timeline-event.html">
                 <div class="card-media h-32">
-                  <img src="../assets/images/events/img-2.jpg" alt="">
+                  <img src="../public/assets/images/events/img-2.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
               </a>
@@ -336,7 +336,7 @@ export default {
               <a href="timeline-event.html">
                 <div class="card-media h-32">
   <!--                <img src="../assets/images/events/img-3.jpg" alt="">-->
-                  <img src="../assets/images/events/img-3.jpg" alt="">
+                  <img src="../public/assets/images/events/img-3.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
               </a>
@@ -359,7 +359,7 @@ export default {
             <div class="card">
               <a href="timeline-event.html">
                 <div class="card-media h-32">
-                  <img src="../assets/images/events/img-4.jpg" alt="">
+                  <img src="../public/assets/images/events/img-4.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
               </a>

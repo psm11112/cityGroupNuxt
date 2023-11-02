@@ -14,79 +14,79 @@
             <li>
               <a href="feed.html">
                 <!--                  <img src="assets/images/icons/home.png" alt="feeds" class="w-6">-->
-                <img src="../assets/images/icons/home.png" alt="feeds" class="w-6">
+                <img src="../public/assets/images/icons/home.png" alt="feeds" class="w-6">
                 <span> Feed </span>
               </a>
             </li>
             <li>
               <a href="messages.html">
-                <img src="../assets/images/icons/message.png" alt="messages" class="w-5">
+                <img src="../public/assets/images/icons/message.png" alt="messages" class="w-5">
                 <span> messages </span>
               </a>
             </li>
             <li>
               <a href="video.html">
-                <img src="../assets/images/icons/video.png" alt="messages" class="w-6">
+                <img src="../public/assets/images/icons/video.png" alt="messages" class="w-6">
                 <span> video </span>
               </a>
             </li>
             <li class="active">
               <a href="event.html">
-                <img src="../assets/images/icons/event.png" alt="messages" class="w-6">
+                <img src="../public/assets/images/icons/event.png" alt="messages" class="w-6">
                 <span> event </span>
               </a>
             </li>
             <li>
               <a href="pages.html">
-                <img src="../assets/images/icons/page.png" alt="pages" class="w-6">
+                <img src="../public/assets/images/icons/page.png" alt="pages" class="w-6">
                 <span> Pages </span>
               </a>
             </li>
             <li>
               <a href="groups.html">
-                <img src="../assets/images/icons/group.png" alt="groups" class="w-6">
+                <img src="../public/assets/images/icons/group.png" alt="groups" class="w-6">
                 <span> Groups </span>
               </a>
             </li>
             <li>
               <a href="market.html">
-                <img src="../assets/images/icons/market.png" alt="market" class="w-7 -ml-1">
+                <img src="../public/assets/images/icons/market.png" alt="market" class="w-7 -ml-1">
                 <span> market </span>
               </a>
             </li>
             <li>
               <a href="blog.html">
-                <img src="../assets/images/icons/blog.png" alt="blog" class="w-6">
+                <img src="../public/assets/images/icons/blog.png" alt="blog" class="w-6">
                 <span> blog </span>
               </a>
             </li>
             <li class="!hidden" id="show__more">
               <a href="games.html">
-                <img src="../assets/images/icons/game.png" alt="games" class="w-6">
+                <img src="../public/assets/images/icons/game.png" alt="games" class="w-6">
                 <span> games </span>
               </a>
             </li>
             <li class="!hidden" id="show__more">
               <a href="funding.html">
-                <img src="../assets/images/icons/fund.png" alt="messages" class="w-6">
+                <img src="../public/assets/images/icons/fund.png" alt="messages" class="w-6">
                 <span> Fundraiser  </span>
               </a>
             </li>
             <li class="!hidden" id="show__more">
               <a href="blog-2.html">
-                <img src="../assets/images/icons/blog-2.png" alt="blog" class="w-6">
+                <img src="../public/assets/images/icons/blog-2.png" alt="blog" class="w-6">
                 <span> blog II </span>
               </a>
             </li>
             <li class="!hidden" id="show__more">
               <a href="event-2.html">
-                <img src="../assets/images/icons/event-2.png" alt="event" class="w-6">
+                <img src="../public/assets/images/icons/event-2.png" alt="event" class="w-6">
                 <span> Event II </span>
               </a>
             </li>
             <li class="!hidden" id="show__more">
               <a href="groups-2.html">
-                <img src="../assets/images/icons/group-2.png" alt="groups" class="w-6">
+                <img src="../public/assets/images/icons/group-2.png" alt="groups" class="w-6">
                 <span> Groups II </span>
               </a>
             </li>
@@ -107,19 +107,19 @@
           </div>
           <a href="#">
             <div class="flex items-center gap-2 p-3 px-4 rounded-xl hover:bg-secondery">
-              <img src="../assets/images/avatars/avatar-2.jpg" alt="" class="w-6 rounded-full object-cover">
+              <img src="../public/assets/images/avatars/avatar-2.jpg" alt="" class="w-6 rounded-full object-cover">
               <div> Marin Gray</div>
             </div>
           </a>
           <a href="#">
             <div class="flex items-center gap-2 p-3 px-4 rounded-xl hover:bg-secondery">
-              <img src="../assets/images/avatars/avatar-7.jpg" alt="" class="w-6 rounded-full object-cover">
+              <img src="../public/assets/images/avatars/avatar-7.jpg" alt="" class="w-6 rounded-full object-cover">
               <div>   Alexa Stella</div>
             </div>
           </a>
           <a href="#">
             <div class="flex items-center gap-2 p-3 px-4 rounded-xl hover:bg-secondery">
-              <img src="../assets/images/avatars/avatar-3.jpg" alt="" class="w-6 rounded-full object-cover">
+              <img src="../public/assets/images/avatars/avatar-3.jpg" alt="" class="w-6 rounded-full object-cover">
               <div> Sarah Ali</div>
             </div>
           </a>

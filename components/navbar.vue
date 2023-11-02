@@ -53,11 +53,11 @@ const auth=useAuthStores();
                 <button type="button" class="text-blue-500">Clear</button>
               </div>
               <nav class="text-sm font-medium text-black dark:text-white">
-                <a href="#" class=" relative px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <img src="../assets/images/avatars/avatar-2.jpg" class="w-9 h-9 rounded-full"> <div>   <div> Jesse Steeve </div>  <div class="text-xs text-blue-500 font-medium mt-0.5">  Friend </div>   </div> <ion-icon name="close" class="text-base absolute right-3 top-1/2 -translate-y-1/2 "></ion-icon>  </a>
-                <a href="#" class=" relative px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <img src="../assets/images/avatars/avatar-2.jpg" class="w-9 h-9 rounded-full"> <div>   <div>  Martin Gray </div>  <div class="text-xs text-blue-500 font-medium mt-0.5">  Friend </div>   </div> <ion-icon name="close" class="text-base absolute right-3 top-1/2 -translate-y-1/2 "></ion-icon>  </a>
-                <a href="#" class=" relative px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <img src="../assets/images/group/group-2.jpg" class="w-9 h-9 rounded-full"> <div>   <div>  Delicious Foods  </div>  <div class="text-xs text-rose-500 font-medium mt-0.5">  Group </div>   </div> <ion-icon name="close" class="text-base absolute right-3 top-1/2 -translate-y-1/2 "></ion-icon>  </a>
-                <a href="#" class=" relative px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <img src="../assets/images/group/group-1.jpg" class="w-9 h-9 rounded-full"> <div>   <div> Delicious Foods  </div>  <div class="text-xs text-yellow-500 font-medium mt-0.5">  Page </div>   </div> <ion-icon name="close" class="text-base absolute right-3 top-1/2 -translate-y-1/2 "></ion-icon>  </a>
-                <a href="#" class=" relative px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <img src="../assets/images/avatars/avatar-6.jpg" class="w-9 h-9 rounded-full"> <div>   <div>  John Welim </div>  <div class="text-xs text-blue-500 font-medium mt-0.5">  Friend </div>   </div> <ion-icon name="close" class="text-base absolute right-3 top-1/2 -translate-y-1/2 "></ion-icon>  </a>
+                <a href="#" class=" relative px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <img src="../public/assets/images/avatars/avatar-2.jpg" class="w-9 h-9 rounded-full"> <div>   <div> Jesse Steeve </div>  <div class="text-xs text-blue-500 font-medium mt-0.5">  Friend </div>   </div> <ion-icon name="close" class="text-base absolute right-3 top-1/2 -translate-y-1/2 "></ion-icon>  </a>
+                <a href="#" class=" relative px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <img src="../public/assets/images/avatars/avatar-2.jpg" class="w-9 h-9 rounded-full"> <div>   <div>  Martin Gray </div>  <div class="text-xs text-blue-500 font-medium mt-0.5">  Friend </div>   </div> <ion-icon name="close" class="text-base absolute right-3 top-1/2 -translate-y-1/2 "></ion-icon>  </a>
+                <a href="#" class=" relative px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <img src="../public/assets/images/group/group-2.jpg" class="w-9 h-9 rounded-full"> <div>   <div>  Delicious Foods  </div>  <div class="text-xs text-rose-500 font-medium mt-0.5">  Group </div>   </div> <ion-icon name="close" class="text-base absolute right-3 top-1/2 -translate-y-1/2 "></ion-icon>  </a>
+                <a href="#" class=" relative px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <img src="../public/assets/images/group/group-1.jpg" class="w-9 h-9 rounded-full"> <div>   <div> Delicious Foods  </div>  <div class="text-xs text-yellow-500 font-medium mt-0.5">  Page </div>   </div> <ion-icon name="close" class="text-base absolute right-3 top-1/2 -translate-y-1/2 "></ion-icon>  </a>
+                <a href="#" class=" relative px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <img src="../public/assets/images/avatars/avatar-6.jpg" class="w-9 h-9 rounded-full"> <div>   <div>  John Welim </div>  <div class="text-xs text-blue-500 font-medium mt-0.5">  Friend </div>   </div> <ion-icon name="close" class="text-base absolute right-3 top-1/2 -translate-y-1/2 "></ion-icon>  </a>
                 <a href="#" class="hidden relative  px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <ion-icon class="text-2xl" name="search-outline"></ion-icon>  Creative ideas about Business  </a>
                 <a href="#" class="hidden relative  px-3 py-1.5 flex items-center gap-4 hover:bg-secondery rounded-lg dark:hover:bg-white/10"> <ion-icon class="text-2xl" name="search-outline"></ion-icon>  8 Facts About Writting  </a>
               </nav>
@@ -142,14 +142,14 @@ const auth=useAuthStores();
               <!-- list -->
               <ul class="-m-1 mt-4 pb-1 text-xs text-gray-500 dark:text-white" uk-scrollspy="target: > li; cls: uk-animation-scale-up , uk-animation-slide-bottom-small ;repeat: true">
                 <li class="flex items-center gap-4 hover:bg-secondery rounded-md p-1.5 cursor-pointer dark:hover:bg-white/10">
-                  <img src="../assets/images/icons/group.png" alt="" class="w-7">
+                  <img src="../public/assets/images/icons/group.png" alt="" class="w-7">
                   <div class="flex-1">
                     <a href="timeline.html"><h4 class="font-medium text-sm text-black dark:text-white"> Groups </h4></a>
                     <div class="mt-1 text-xs text-gray-500 dark:text-white"> Meet people with similar interests. </div>
                   </div>
                 </li>
                 <li class="flex items-center gap-4 hover:bg-secondery rounded-md p-1.5 cursor-pointer dark:hover:bg-white/10">
-                  <img src="../assets/images/icons/page.png" alt="" class="w-7">
+                  <img src="../public/assets/images/icons/page.png" alt="" class="w-7">
                   <div class="flex-1">
                     <a href="timeline.html"><h4 class="font-medium text-sm text-black dark:text-white"> Pages </h4></a>
                     <div class="mt-1"> Find and connect with businesses.
@@ -157,21 +157,21 @@ const auth=useAuthStores();
                   </div>
                 </li>
                 <li class="flex items-center gap-4 hover:bg-secondery rounded-md p-1.5 cursor-pointer dark:hover:bg-white/10">
-                  <img src="../assets/images/icons/event.png" class="w-7">
+                  <img src="../public/assets/images/icons/event.png" class="w-7">
                   <div class="flex-1">
                     <a href="timeline.html"><h4 class="font-medium text-sm text-black dark:text-white"> Event </h4></a>
                     <div class="mt-1">Discover fun activities near you .</div>
                   </div>
                 </li>
                 <li class="flex items-center gap-4 hover:bg-secondery rounded-md p-1.5 cursor-pointer dark:hover:bg-white/10">
-                  <img src="../assets/images/icons/market.png" class="w-8 -ml-1">
+                  <img src="../public/assets/images/icons/market.png" class="w-8 -ml-1">
                   <div class="flex-1">
                     <a href="timeline.html"><h4 class="font-medium text-sm text-black dark:text-white"> Event </h4></a>
                     <div class="mt-1">Find local buyers and sellers .</div>
                   </div>
                 </li>
                 <li class="flex items-center gap-4 hover:bg-secondery rounded-md p-1.5 cursor-pointer dark:hover:bg-white/10">
-                  <img src="../assets/images/icons/game.png" alt="" class="w-7">
+                  <img src="../public/assets/images/icons/game.png" alt="" class="w-7">
                   <div class="flex-1">
                     <a href="timeline.html"><h4 class="font-medium text-sm text-black dark:text-white"> Games </h4></a>
                     <div class="mt-1"> play game with friends have fun. </div>
@@ -218,7 +218,7 @@ const auth=useAuthStores();
                 <div class="pl-2 p-1 text-sm font-normal dark:text-white">
 
                   <a href="#" class="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery dark:hover:bg-white/10 bg-teal-500/5">
-                    <div class="relative w-12 h-12 shrink-0"> <img src="../assets/images/avatars/avatar-3.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
+                    <div class="relative w-12 h-12 shrink-0"> <img src="../public/assets/images/avatars/avatar-3.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
                     <div class="flex-1 ">
                       <p> <b class="font-bold mr-1"> Alexa Gray</b> started following you. Welcome him to your profile. 👋 </p>
                       <div class="text-xs text-gray-500 mt-1.5 dark:text-white/80"> 4 hours ago </div>
@@ -226,21 +226,21 @@ const auth=useAuthStores();
                     </div>
                   </a>
                   <a href="#" class="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery dark:hover:bg-white/10">
-                    <div class="relative w-12 h-12 shrink-0"> <img src="../assets/images/avatars/avatar-7.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
+                    <div class="relative w-12 h-12 shrink-0"> <img src="../public/assets/images/avatars/avatar-7.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
                     <div class="flex-1 ">
                       <p> <b class="font-bold mr-1">Jesse Steeve</b> mentioned you in a story. Check it out and reply. 📣 </p>
                       <div class="text-xs text-gray-500 mt-1.5 dark:text-white/80"> 8 hours ago </div>
                     </div>
                   </a>
                   <a href="#" class="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery dark:hover:bg-white/10">
-                    <div class="relative w-12 h-12 shrink-0"> <img src="../assets/images/avatars/avatar-6.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
+                    <div class="relative w-12 h-12 shrink-0"> <img src="../public/assets/images/avatars/avatar-6.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
                     <div class="flex-1 ">
                       <p> <b class="font-bold mr-1"> Alexa stella</b> commented on your photo  “Wow, stunning shot!” 💬 </p>
                       <div class="text-xs text-gray-500 mt-1.5 dark:text-white/80"> 8 hours ago </div>
                     </div>
                   </a>
                   <a href="#" class="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery dark:hover:bg-white/10">
-                    <div class="relative w-12 h-12 shrink-0"> <img src="../assets/images/avatars/avatar-2.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
+                    <div class="relative w-12 h-12 shrink-0"> <img src="../public/assets/images/avatars/avatar-2.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
                     <div class="flex-1 ">
                       <p> <b class="font-bold mr-1"> John Michael</b> who you might know,  is on socialite.</p>
                       <div class="text-xs text-gray-500 mt-1.5 dark:text-white/80"> 2 hours ago </div>
@@ -248,7 +248,7 @@ const auth=useAuthStores();
                     <button type="button" class="button text-white bg-primary">fallow</button>
                   </a>
                   <a href="#" class="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery dark:hover:bg-white/10 bg-teal-500/5">
-                    <div class="relative w-12 h-12 shrink-0"> <img src="../assets/images/avatars/avatar-3.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
+                    <div class="relative w-12 h-12 shrink-0"> <img src="../public/assets/images/avatars/avatar-3.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
                     <div class="flex-1 ">
                       <p> <b class="font-bold mr-1"> Sarah Gray</b> sent you a message. He wants to chat with you. 💖 </p>
                       <div class="text-xs text-gray-500 mt-1.5 dark:text-white/80"> 4 hours ago </div>
@@ -256,21 +256,21 @@ const auth=useAuthStores();
                     </div>
                   </a>
                   <a href="#" class="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery dark:hover:bg-white/10">
-                    <div class="relative w-12 h-12 shrink-0"> <img src="../assets/images/avatars/avatar-4.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
+                    <div class="relative w-12 h-12 shrink-0"> <img src="../public/assets/images/avatars/avatar-4.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
                     <div class="flex-1 ">
                       <p> <b class="font-bold mr-1"> Jesse Steeve</b> sarah tagged you <br> in a photo of your birthday party. 📸 </p>
                       <div class="text-xs text-gray-500 mt-1.5 dark:text-white/80"> 8 hours ago </div>
                     </div>
                   </a>
                   <a href="#" class="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery dark:hover:bg-white/10">
-                    <div class="relative w-12 h-12 shrink-0"> <img src="../assets/images/avatars/avatar-2.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
+                    <div class="relative w-12 h-12 shrink-0"> <img src="../public/assets/images/avatars/avatar-2.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
                     <div class="flex-1 ">
                       <p> <b class="font-bold mr-1"> Lewis Lewis</b> mentioned you in a story. Check it out and reply. 📣 </p>
                       <div class="text-xs text-gray-500 mt-1.5 dark:text-white/80"> 8 hours ago </div>
                     </div>
                   </a>
                   <a href="#" class="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery dark:hover:bg-white/10">
-                    <div class="relative w-12 h-12 shrink-0"> <img src="../assets/images/avatars/avatar-7.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
+                    <div class="relative w-12 h-12 shrink-0"> <img src="../public/assets/images/avatars/avatar-7.jpg" alt="" class="object-cover w-full h-full rounded-full"></div>
                     <div class="flex-1 ">
                       <p> <b class="font-bold mr-1"> Martin Gray</b> liked your photo of the Eiffel Tower. 😍 </p>
                       <div class="text-xs text-gray-500 mt-1.5 dark:text-white/80"> 8 hours ago </div>
@@ -323,7 +323,7 @@ const auth=useAuthStores();
 
                   <a href="#" class="relative flex items-center gap-4 p-2 py-3 duration-200 rounded-lg hover:bg-secondery dark:hover:bg-white/10">
                     <div class="relative w-10 h-10 shrink-0">
-                      <img src="../assets/images/avatars/avatar-2.jpg" alt="" class="object-cover w-full h-full rounded-full">
+                      <img src="../public/assets/images/avatars/avatar-2.jpg" alt="" class="object-cover w-full h-full rounded-full">
                     </div>
                     <div class="flex-1 min-w-0">
                       <div class="flex items-center gap-2 mb-1">
@@ -336,7 +336,7 @@ const auth=useAuthStores();
                   </a>
                   <a href="#" class="relative flex items-center gap-4 p-2 py-3 duration-200 rounded-lg hover:bg-secondery dark:hover:bg-white/10">
                     <div class="relative w-10 h-10 shrink-0">
-                      <img src="../assets/images/avatars/avatar-4.jpg" alt="" class="object-cover w-full h-full rounded-full">
+                      <img src="../public/assets/images/avatars/avatar-4.jpg" alt="" class="object-cover w-full h-full rounded-full">
                     </div>
                     <div class="flex-1 min-w-0">
                       <div class="flex items-center gap-2 mb-1">
@@ -348,7 +348,7 @@ const auth=useAuthStores();
                   </a>
                   <a href="#" class="relative flex items-center gap-4 p-2 py-3 duration-200 rounded-lg hover:bg-secondery dark:hover:bg-white/10">
                     <div class="relative w-10 h-10 shrink-0">
-                      <img src="../assets/images/avatars/avatar-5.jpg" alt="" class="object-cover w-full h-full rounded-full">
+                      <img src="../public/assets/images/avatars/avatar-5.jpg" alt="" class="object-cover w-full h-full rounded-full">
                     </div>
                     <div class="flex-1 min-w-0">
                       <div class="flex items-center gap-2 mb-1">
@@ -360,7 +360,7 @@ const auth=useAuthStores();
                   </a>
                   <a href="#" class="relative flex items-center gap-4 p-2 py-3 duration-200 rounded-lg hover:bg-secondery dark:hover:bg-white/10">
                     <div class="relative w-10 h-10 shrink-0">
-                      <img src="../assets/images/avatars/avatar-3.jpg" alt="" class="object-cover w-full h-full rounded-full">
+                      <img src="../public/assets/images/avatars/avatar-3.jpg" alt="" class="object-cover w-full h-full rounded-full">
                     </div>
                     <div class="flex-1 min-w-0">
                       <div class="flex items-center gap-2 mb-1">
@@ -373,7 +373,7 @@ const auth=useAuthStores();
                   </a>
                   <a href="#" class="relative flex items-center gap-4 p-2 py-3 duration-200 rounded-lg hover:bg-secondery dark:hover:bg-white/10">
                     <div class="relative w-10 h-10 shrink-0">
-                      <img src="../assets/images/avatars/avatar-7.jpg" alt="" class="object-cover w-full h-full rounded-full">
+                      <img src="../public/assets/images/avatars/avatar-7.jpg" alt="" class="object-cover w-full h-full rounded-full">
                     </div>
                     <div class="flex-1 min-w-0">
                       <div class="flex items-center gap-2 mb-1">
@@ -385,7 +385,7 @@ const auth=useAuthStores();
                   </a>
                   <a href="#" class="relative flex items-center gap-4 p-2 py-3 duration-200 rounded-lg hover:bg-secondery dark:hover:bg-white/10">
                     <div class="relative w-10 h-10 shrink-0">
-                      <img src="../assets/images/avatars/avatar-4.jpg" alt="" class="object-cover w-full h-full rounded-full">
+                      <img src="../public/assets/images/avatars/avatar-4.jpg" alt="" class="object-cover w-full h-full rounded-full">
                     </div>
                     <div class="flex-1 min-w-0">
                       <div class="flex items-center gap-2 mb-1">
@@ -412,7 +412,7 @@ const auth=useAuthStores();
             <!-- profile -->
             <div v-show="auth.user">
             <div  class="rounded-full relative bg-secondery cursor-pointer shrink-0">
-              <img src="../assets/images/avatars/avatar-2.jpg" alt="" class="sm:w-9 sm:h-9 w-7 h-7 rounded-full shadow shrink-0">
+              <img src="../public/assets/images/avatars/avatar-2.jpg" alt="" class="sm:w-9 sm:h-9 w-7 h-7 rounded-full shadow shrink-0">
             </div>
             </div>
             <div  class="hidden bg-white rounded-lg drop-shadow-xl dark:bg-slate-700 w-64 border2"
@@ -420,7 +420,7 @@ const auth=useAuthStores();
 
               <a href="timeline.html">
                 <div class="p-4 py-5 flex items-center gap-4">
-                  <img src="../assets/images/avatars/avatar-2.jpg" alt="" class="w-10 h-10 rounded-full shadow">
+                  <img src="../public/assets/images/avatars/avatar-2.jpg" alt="" class="w-10 h-10 rounded-full shadow">
                   <div class="flex-1">
                     <h4 class="text-sm font-medium text-black">Stell johnson</h4>
                     <div class="text-sm mt-1 text-blue-600 font-light dark:text-white/70">@mohnson</div>
@@ -491,7 +491,7 @@ const auth=useAuthStores();
 
             <div class="flex items-center gap-2 hidden">
 
-              <img src="../assets/images/avatars/avatar-2.jpg" alt="" class="w-9 h-9 rounded-full shadow">
+              <img src="../public/assets/images/avatars/avatar-2.jpg" alt="" class="w-9 h-9 rounded-full shadow">
 
               <div class="w-20 font-semibold text-gray-600"> Hamse </div>
 
