@@ -17,7 +17,7 @@ export default defineNuxtConfig({
       script: [
         {type:'module',src:'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'},
         {src:'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'},
-        {type:'module',src:'https://admin.nearmeglocal.com/public/js/uikit.min.js'},
+        {src:'https://admin.nearmeglocal.com/public/js/uikit.min.js'},
         {src:'https://admin.nearmeglocal.com/public/js/simplebar.js'},
         {src:'https://admin.nearmeglocal.com/public/js/script.js'},
 
