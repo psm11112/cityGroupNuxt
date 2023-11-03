@@ -32,11 +32,11 @@ export const  useAuthStores =defineStore('auth',()=>{
         console.log(isLoggedIn);
 
 
-        navigateTo('/login')
+        navigateTo('/')
     }
     async function fetchUser(){
         loading=true;
-        const {data}=await useApiFetch("/api/user")
+        const {data}=await useApiFetch("/api/user",{})
 
         useLocalStorage('user',JSON.stringify(data.value))
         user.value=data.value as User;
@@ -47,7 +47,7 @@ export const  useAuthStores =defineStore('auth',()=>{
         loading=true;
 
         console.log(loading);
-        await useApiFetch("/sanctum/csrf-cookie")
+        await useApiFetch("/sanctum/csrf-cookie",{})
 
 
 
@@ -60,7 +60,7 @@ export const  useAuthStores =defineStore('auth',()=>{
 
            //  loading=false;
 
-      //  navigateTo('/check')
+        navigateTo('/')
         return login
     }
 

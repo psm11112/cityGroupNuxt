@@ -3,6 +3,9 @@
 import {useAuthStores} from "../stores/useAuthStores";
 
 const auth=useAuthStores();
+function logout(){
+  auth.logout();
+}
 
 </script>
 
@@ -24,10 +27,10 @@ const auth=useAuthStores();
           </button>
           <div id="logo">
             <a href="feed.html">
-              <img src="../public/assets/images/logo.png" alt="" class="w-28 md:block hidden dark:!hidden">
-              <img src="../public/assets/images/logo-light.png" alt="" class="dark:md:block hidden">
-              <img src="../public/assets/images/logo-mobile.png" class="hidden max-md:block w-20 dark:!hidden" alt="">
-              <img src="../public/assets/images/logo-mobile-light.png" class="hidden dark:max-md:block w-20" alt="">
+              <img src="../public/assets/images/logo-city.png" alt="" class="w-28 md:block hidden dark:!hidden">
+              <img src="../public/assets/images/logo-city.png" alt="" class="dark:md:block hidden">
+              <img src="../public/assets/images/logo-city.png" class="hidden max-md:block w-20 dark:!hidden" alt="">
+              <img src="../public/assets/images/logo-city.png" class="hidden dark:max-md:block w-20" alt="">
             </a>
           </div>
 
@@ -39,6 +42,7 @@ const auth=useAuthStores();
         <div class="max-w-[1220px] mx-auto flex items-center">
 
           <!-- search -->
+
           <div id="search--box" class="xl:w-[680px] sm:w-96 sm:relative rounded-xl overflow-hidden z-20 bg-secondery max-md:hidden w-screen left-0 max-sm:fixed max-sm:top-2 dark:!bg-white/5">
             <ion-icon name="search" class="absolute left-4 top-1/2 -translate-y-1/2"></ion-icon>
             <input type="text" placeholder="Search Friends, videos .." class="w-full !pl-10 !font-normal !bg-transparent h-12 !text-sm">
@@ -72,6 +76,7 @@ const auth=useAuthStores();
           <!-- header icons -->
           <div class="flex items-center sm:gap-4 gap-2 absolute right-5 top-1/2 -translate-y-1/2 text-black">
             <!-- create -->
+
             <div v-show="auth.user">
             <button  type="button" class="sm:p-2 p-1 rounded-full relative sm:bg-secondery dark:text-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 max-sm:hidden">
@@ -422,8 +427,8 @@ const auth=useAuthStores();
                 <div class="p-4 py-5 flex items-center gap-4">
                   <img src="../public/assets/images/avatars/avatar-2.jpg" alt="" class="w-10 h-10 rounded-full shadow">
                   <div class="flex-1">
-                    <h4 class="text-sm font-medium text-black">Stell johnson</h4>
-                    <div class="text-sm mt-1 text-blue-600 font-light dark:text-white/70">@mohnson</div>
+                    <h4 class="text-sm font-medium text-black" v-if="auth.user"> {{auth.user.name}}</h4>
+                    <div class="text-sm mt-1 text-blue-600 font-light dark:text-white/70" v-if="auth.user"> {{auth.user.email}}</div>
                   </div>
                 </div>
               </a>
@@ -476,14 +481,14 @@ const auth=useAuthStores();
                   </div>
                 </button>
                 <hr class="-mx-2 my-2 dark:border-gray-600/60">
-                <a href="form-login.html">
+                <button class="button"  @click="logout" >
                   <div class="flex items-center gap-2.5 hover:bg-secondery p-2 px-2.5 rounded-md dark:hover:bg-white/10">
                     <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
                     </svg>
                     Log Out
                   </div>
-                </a>
+                </button>
 
               </nav>
 
@@ -502,7 +507,7 @@ const auth=useAuthStores();
             </div>
 
 
-            <NuxtLink  to="/login" class="p-2 rounded-lg font-bold bg-blue-600 flex space-x-1 sm:p-1 p-1  relative  dark:text-white">
+            <NuxtLink v-if="!auth.user"  to="/login" class="p-2 rounded-lg font-bold bg-blue-600 flex space-x-1 sm:p-1 p-1  relative  dark:text-white">
               Login
             </NuxtLink >
 

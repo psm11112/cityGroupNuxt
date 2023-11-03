@@ -7,15 +7,10 @@ export default defineNuxtPlugin(async(nuxtApp) => {
     const auth=useAuthStores();
 
 
-    const user=useLocalStorage('user',null,[])
-
-    if(user.value){
-
+    const user=useLocalStorage('user',[],[])
+    if(user){
         // @ts-ignore
         auth.setUser(user.value)
-
-    }else{
-       // auth.userLoggin=false
     }
 
 

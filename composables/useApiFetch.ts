@@ -17,7 +17,7 @@ export function useApiFetch<T>(path:string,options:UseFetchOptions<T>){
           ...useRequestHeaders(["referer","cookie"])
       }
   }
-  return useFetch("https://admin.nearmeglocal.com"+path,{
+  return useFetch("http://localhost:8000"+path,{
     credentials:'include',
    ...options,
     watch:false,
