@@ -10,5 +10,5 @@ async function logout(){
 <template>
   <button v-if="auth.isLoggedIn" @click="logout">Logout</button>
 <h1>Check</h1>
-  {{auth.user}}
+  <div class="bg-teal-400/50" >{{auth.user}}</div>
 </template>

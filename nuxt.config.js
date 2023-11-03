@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  modules: ["nuxt-icon", "@nuxtjs/tailwindcss", '@pinia/nuxt'],
+  modules: ["nuxt-icon", "@nuxtjs/tailwindcss", '@pinia/nuxt','@vueuse/nuxt'],
 
   app: {
     head: {

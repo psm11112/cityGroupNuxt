@@ -1,5 +1,6 @@
 import {useAuthStores} from "~/stores/useAuthStores";
-import {useLocalStorage} from "@vueuse/core/index";
+import {useLocalStorage} from "@vueuse/core";
+
 
 export default defineNuxtPlugin(async(nuxtApp) => {
 
