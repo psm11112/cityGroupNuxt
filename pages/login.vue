@@ -1,6 +1,7 @@
 <script setup>
 import {useAuthStores} from "../stores/useAuthStores";
 import { ref, watch } from 'vue'
+import { useToast } from 'vue-toastification'
 
 
 definePageMeta({
@@ -12,6 +13,7 @@ const form=ref({
 })
 
 const loading=ref(false)
+const toast=useToast()
 
 
 
@@ -24,8 +26,9 @@ const auth=useAuthStores();
 async function login(){
   loading.value=true
   const {error}=await auth.login(form.value)
-
+  toast.success('User Successfully Login')
   loading.value=false
+
 }
 
 </script>

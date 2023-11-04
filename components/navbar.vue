@@ -1,10 +1,34 @@
-<script  setup>
+<script setup>
+import { useToast } from 'vue-toastification'
+
+
 
 import {useAuthStores} from "../stores/useAuthStores";
-
+import {ref, watch} from 'vue'
 const auth=useAuthStores();
-function logout(){
-  auth.logout();
+let loadingLogOut=ref(false)
+
+const toast = useToast()
+
+
+watch(loadingLogOut, (newUsername) => {
+  console.log("Log Out ")
+  // Do something with the updated value.
+});
+
+async function logout(){
+
+  loadingLogOut.value=true
+  await auth.logout();
+  loadingLogOut.value=false;
+  toast.error('Successfully Logout')
+
+  //this.$toast.success('Successfully user Logout')
+
+
+
+
+
 }
 
 </script>
@@ -486,7 +510,9 @@ function logout(){
                     <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
                     </svg>
-                    Log Out
+
+                    <span v-if="!loadingLogOut">Log Out</span>
+                    <svg v-else class="text-white" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g><circle cx="3" cy="12" r="2" fill="#FFFFFF"></circle><circle cx="21" cy="12" r="2" fill="#FFFFFF"></circle><circle cx="12" cy="21" r="2" fill="#FFFFFF	"></circle><circle cx="12" cy="3" r="2" fill="#FFFFFF"></circle><circle cx="5.64" cy="5.64" r="2" fill="#FFFFFF"></circle><circle cx="18.36" cy="18.36" r="2" fill="#FFFFFF"></circle><circle cx="5.64" cy="18.36" r="2" fill="#FFFFFF"></circle><circle cx="18.36" cy="5.64" r="2" fill="#FFFFFF"></circle><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"></animateTransform></g></svg>
                   </div>
                 </button>
 

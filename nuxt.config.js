@@ -11,6 +11,9 @@ export default defineNuxtConfig({
 
   modules: ["nuxt-icon", "@nuxtjs/tailwindcss", '@pinia/nuxt','@vueuse/nuxt'],
 
+
+
+
   app: {
     head: {
 
@@ -26,6 +29,12 @@ export default defineNuxtConfig({
   },
 
 
+
+  plugins: [
+    '~/plugins/loadUser',
+    '~/plugins/toast'
+
+  ]
 
 
 

@@ -5,13 +5,16 @@ import {useLocalStorage} from "@vueuse/core";
 export default defineNuxtPlugin(async(nuxtApp) => {
 
     const auth=useAuthStores();
+    const user=useLocalStorage('user',null,[])
 
-
-    const user=useLocalStorage('user',[],[])
-    if(user){
+    if(user.value){
         // @ts-ignore
-        auth.setUser(user.value)
+
+        auth.setUser(JSON.parse(user.value))
+
+
     }
+
 
 
 

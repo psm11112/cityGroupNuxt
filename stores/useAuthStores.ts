@@ -21,7 +21,10 @@ export const  useAuthStores =defineStore('auth',()=>{
 
     // @ts-ignore
     async function setUser(data) {
+        console.log("lop");
+
         user.value=data
+        console.log(user);
     }
 
     async function logout(){
