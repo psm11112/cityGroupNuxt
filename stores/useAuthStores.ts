@@ -31,6 +31,8 @@ export const  useAuthStores =defineStore('auth',()=>{
         console.log(user.value);
         console.log(isLoggedIn);
 
+        localStorage.removeItem('user')
+
 
         navigateTo('/')
     }
@@ -49,12 +51,11 @@ export const  useAuthStores =defineStore('auth',()=>{
         console.log(loading);
         await useApiFetch("/sanctum/csrf-cookie",{})
 
-
-
         const login=await useApiFetch("/api/login",{
             method:'POST',
             body:credentials,
         })
+
 
        await  fetchUser()
 

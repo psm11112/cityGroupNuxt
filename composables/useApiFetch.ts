@@ -9,7 +9,6 @@ export function useApiFetch<T>(path:string,options:UseFetchOptions<T>){
     headers['X-XSRF-TOKEN']=token.value as string
   }
 
-  console.log(process.server)
 
   if(process.server){
       headers={
