@@ -9,6 +9,7 @@ export function useApiFetch<T>(path:string,options:UseFetchOptions<T>){
     headers['X-XSRF-TOKEN']=token.value as string
   }
 
+
   console.log(process.server)
 
   if(process.server){
@@ -17,7 +18,7 @@ export function useApiFetch<T>(path:string,options:UseFetchOptions<T>){
           ...useRequestHeaders(["referer","cookie"])
       }
   }
-  return useFetch("https://admin.nearmeglocal.com"+path,{
+  return useFetch('http://127.0.0.1:8000'+path,{
     credentials:'include',
    ...options,
     watch:false,

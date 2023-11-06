@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     continuous: true,
   },
 
-  modules: ["nuxt-icon", "@nuxtjs/tailwindcss", '@pinia/nuxt','@vueuse/nuxt'],
+  modules: ["nuxt-icon", "@nuxtjs/tailwindcss", '@pinia/nuxt','@vueuse/nuxt','@formkit/auto-animate/nuxt'],
 
 
 

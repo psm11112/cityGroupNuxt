@@ -8,12 +8,13 @@ definePageMeta({
   layout: false,
 })
 const form=ref({
-  email:'sanjay@test.com',
-  password:'niki12789'
+  email:'',
+  password:''
 })
 
 const loading=ref(false)
 const toast=useToast()
+const errorMessage=ref('');
 
 
 
@@ -25,8 +26,21 @@ const auth=useAuthStores();
 
 async function login(){
   loading.value=true
-  const {error}=await auth.login(form.value)
-  toast.success('User Successfully Login')
+  const {data,error}=await auth.login(form.value)
+
+  if(error){
+
+    if(error.value.data.message.errors){
+      errorMessage.value=error.value.data.message.error.email[0];
+    }else{
+      errorMessage.value=error.value.data.message;
+    }
+  }else {
+
+  }
+
+
+ // toast.success('User Successfully Login')
   loading.value=false
 
 }
@@ -34,6 +48,7 @@ async function login(){
 </script>
 <template>
   <div class="sm:flex">
+
     <div class="relative lg:w-[580px] md:w-96 w-full p-10 min-h-screen bg-white shadow-xl flex items-center pt-10 dark:bg-slate-900 z-10">
 
       <div class="w-full lg:max-w-sm mx-auto space-y-10" uk-scrollspy="target: > *; cls: uk-animation-scale-up; delay: 100 ;repeat: true">
@@ -52,6 +67,7 @@ async function login(){
           <h2 class="text-2xl font-semibold mb-1.5"> Sign in to your account </h2>
           <p class="text-sm text-gray-700 font-normal">If you haven’t signed up yet. <a href="form-register.html" class="text-blue-700">Register here!</a></p>
         </div>
+        <ErrorMessage v-auto-animate :errorMessage="errorMessage"></ErrorMessage>
 
 
         <!-- form -->

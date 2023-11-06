@@ -24,6 +24,7 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.0",
     "@nuxtjs/toast": "^3.3.1",
     "@pinia/nuxt": "^0.5.1",
     "@prisma/client": "^5.3.1",

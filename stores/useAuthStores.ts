@@ -11,6 +11,16 @@ type Credentials={
     email:string,
     password:string
 }
+type Register={
+    name:string,
+    email:string,
+    password:string,
+    password_confirmation:string
+}
+type condeVerification={
+    email:string,
+    opt_number:string
+}
 
 export const  useAuthStores =defineStore('auth',()=>{
     const user=ref<User |null>(null)
@@ -50,25 +60,38 @@ export const  useAuthStores =defineStore('auth',()=>{
     }
     async function login(credentials:Credentials){
         loading=true;
-
-        console.log(loading);
         await useApiFetch("/sanctum/csrf-cookie",{})
-
         const login=await useApiFetch("/api/login",{
             method:'POST',
             body:credentials,
         })
-
-
        await  fetchUser()
-
-           //  loading=false;
-
-        navigateTo('/')
         return login
     }
 
-    console.log(user.value)
 
-    return {user,login,isLoggedIn,fetchUser,logout,setUser,loading}
+    async function register(data:Register){
+        const register=await useApiFetch("/api/register",{
+            method:'POST',
+            body:data,
+        })
+
+        return register
+    }
+
+    async function codeVerification(data:condeVerification){
+        const codeVerification=await useApiFetch("/api/opt_verification",{
+            method:'POST',
+            body:data,
+        })
+
+        return codeVerification
+    }
+
+
+
+
+
+
+    return {user,login,isLoggedIn,fetchUser,logout,setUser,loading,register,codeVerification}
 })
