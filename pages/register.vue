@@ -49,12 +49,12 @@ async function register(){
       <div class="w-full lg:max-w-sm mx-auto space-y-10" uk-scrollspy="target: > *; cls: uk-animation-scale-up; delay: 100 ;repeat: true">
 
         <!-- logo image-->
-        <a href="#"> <img src="assets/images/logo.png" class="w-28 absolute top-10 left-10 dark:hidden" alt=""></a>
-        <a href="#"> <img src="assets/images/logo-light.png" class="w-28 absolute top-10 left-10 hidden dark:!block" alt=""></a>
+        <a href="#"> <img src="../public/assets/images/logo.png" class="w-28 absolute top-10 left-10 dark:hidden" alt=""></a>
+        <a href="#"> <img src="../public/assets/images/logo-light.png" class="w-28 absolute top-10 left-10 hidden dark:!block" alt=""></a>
 
         <!-- logo icon optional -->
         <div class="hidden">
-          <img class="w-12" src="assets/images/logo-icon.png" alt="Socialite html template">
+          <img class="w-12" src="../public/assets/images/logo-icon.png" alt="Socialite html template">
         </div>
 
 
