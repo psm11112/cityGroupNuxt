@@ -27,12 +27,15 @@ async function login() {
   // loading.value = true;
   const { data, error } = await auth.login(form.value);
 
-  if(data){
+  console.log(data.value);
+  if(data.value!==null){
     useLocalStorage('user',JSON.stringify(data.value.data))
     auth.setUser(data.value.data)
     toast.success('User Successfully Login')
     navigateTo('/')
   }else{
+
+
 
     if (error.value.data.message.errors) {
       errorMessage.value = error.value.data.message.error.email[0];
