@@ -29,11 +29,14 @@ async function login() {
 
   console.log(data.value);
   if(data.value!==null){
-    useLocalStorage('user',JSON.stringify(data.value.data))
+
+    localStorage.setItem('user',JSON.stringify(data.value.data))
+   // useLocalStorage('user',JSON.stringify(data.value.data))
     auth.setUser(data.value.data)
     toast.success('User Successfully Login')
     navigateTo('/')
   }else{
+
 
 
 
