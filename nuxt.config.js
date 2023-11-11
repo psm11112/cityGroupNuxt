@@ -10,10 +10,6 @@ export default defineNuxtConfig({
   },
 
   modules: ["nuxt-icon", "@nuxtjs/tailwindcss", '@pinia/nuxt','@vueuse/nuxt','@formkit/auto-animate/nuxt'],
-
-
-
-
   app: {
     head: {
 
@@ -23,7 +19,6 @@ export default defineNuxtConfig({
         {src:'https://admin.nearmeglocal.com/public/js/uikit.min.js'},
         {src:'https://admin.nearmeglocal.com/public/js/simplebar.js'},
         {src:'https://admin.nearmeglocal.com/public/js/script.js'},
-
       ],
     },
   },

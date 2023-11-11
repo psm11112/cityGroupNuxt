@@ -25,6 +25,8 @@
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.0",
+    "@nuxtjs/auth-next": "^5.0.0-1667386184.dfbbb54",
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/toast": "^3.3.1",
     "@pinia/nuxt": "^0.5.1",
     "@prisma/client": "^5.3.1",
