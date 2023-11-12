@@ -2,6 +2,7 @@
 
 import {ref,watch} from "vue";
 import {useAuthStores} from "../stores/useAuthStores";
+import {useToast} from "vue-toastification";
 
 definePageMeta({
   layout: false,
@@ -9,6 +10,7 @@ definePageMeta({
 let loadingRegister=ref(false)
 
 
+const toast = useToast();
 const auth=useAuthStores();
 const errorMessage=ref('')
 
@@ -31,7 +33,14 @@ async function register(){
   if(data.value !==null){
     loadingRegister.value=false
     auth.setUser(data.value.data)
-    navigateTo('/opt-verification')
+    localStorage.setItem('user',JSON.stringify(data.value.data))
+    if(data.value.data.email_verification>0){
+      navigateTo('/opt-verification')
+    }else{
+      navigateTo('/')
+      toast.success('User Successfully Register')
+    }
+
   }else{
     errorMessage.value=error.value.data['errors'];
     loadingRegister.value=false
@@ -123,12 +132,9 @@ async function register(){
 
             <!-- submit button -->
             <div class="col-span-2">
-              {{loadingRegister}}
               <button type="submit" class="button bg-primary text-white w-full">
                 <span v-if="!loadingRegister">Register</span>
-
                 <svg v-else class="text-white" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g><circle cx="3" cy="12" r="2" fill="#FFFFFF"></circle><circle cx="21" cy="12" r="2" fill="#FFFFFF"></circle><circle cx="12" cy="21" r="2" fill="#FFFFFF	"></circle><circle cx="12" cy="3" r="2" fill="#FFFFFF"></circle><circle cx="5.64" cy="5.64" r="2" fill="#FFFFFF"></circle><circle cx="18.36" cy="18.36" r="2" fill="#FFFFFF"></circle><circle cx="5.64" cy="18.36" r="2" fill="#FFFFFF"></circle><circle cx="18.36" cy="5.64" r="2" fill="#FFFFFF"></circle><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"></animateTransform></g></svg>
-
 
               </button>
             </div>

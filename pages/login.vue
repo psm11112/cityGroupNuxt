@@ -23,34 +23,31 @@ watch(loading, (newUsername) => {
 const auth = useAuthStores();
 
 async function login() {
-  console.log(form.value);
-  // loading.value = true;
+  loading.value = true;
   const { data, error } = await auth.login(form.value);
 
-  console.log(data.value);
+
   if(data.value!==null){
 
     localStorage.setItem('user',JSON.stringify(data.value.data))
-   // useLocalStorage('user',JSON.stringify(data.value.data))
     auth.setUser(data.value.data)
     toast.success('User Successfully Login')
     navigateTo('/')
   }else{
-
-
-
-
     if (error.value.data.message.errors) {
       errorMessage.value = error.value.data.message.error.email[0];
+
     } else {
       errorMessage.value = error.value.data.message;
     }
 
+
+
   }
 
 
-  // // toast.success('User Successfully Login')
-  // loading.value = false;
+   toast.success('User Successfully Login')
+   loading.value = false;
 }
 </script>
 <template>
