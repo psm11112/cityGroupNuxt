@@ -73,9 +73,9 @@ onMounted(async () => {
                 <div class="relative rounded-lg overflow-hidden">
                   <img
                     :src="
-                     baseUrl.public.url+ 'public/storage/' + item.feature_image_url
+                     baseUrl.public.url+ '/public/storage/' + item.feature_image_url
                     "
-                    alt=""
+                    :alt="item.title"
                     class="h-36 w-full object-cover"
                   />
                   <div
