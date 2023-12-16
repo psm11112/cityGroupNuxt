@@ -9,8 +9,10 @@ let loading=ref(false)
 const baseUrl=useRuntimeConfig()
 
 onMounted(async () => {
+  console.log(baseUrl.public.url);
   loading.value=true;
   nextTick(async () => {
+
 
     const { data } = await useFetch("/list/", {
       baseURL: baseUrl.public.url +"/api",
