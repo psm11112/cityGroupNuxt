@@ -1,9 +1,12 @@
 import type {UseFetchOptions} from "nuxt/app";
+import {useRuntimeConfig} from "nuxt/app";
 
 
 export function useApiFetch<T>(path:string,options:UseFetchOptions<T>){
 
-  const token=useCookie('XSRF-TOKEN');
+    const baseUrl=useRuntimeConfig()
+
+    const token=useCookie('XSRF-TOKEN');
   let headers:any={}
   if(token.value){
     headers['X-XSRF-TOKEN']=token.value as string
@@ -18,7 +21,7 @@ export function useApiFetch<T>(path:string,options:UseFetchOptions<T>){
           ...useRequestHeaders(["referer","cookie"])
       }
   }
-  return useFetch('https://admin.nearmeglocal.com'+path,{
+  return useFetch(baseUrl.public.url+path,{
     credentials:'include',
    ...options,
     watch:false,

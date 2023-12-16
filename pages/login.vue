@@ -2,7 +2,7 @@
 import { useAuthStores } from "../stores/useAuthStores";
 import { ref, watch } from "vue";
 import { useToast } from "vue-toastification";
-import {useLocalStorage} from "@vueuse/core/index";
+import { useLocalStorage } from "@vueuse/core/index";
 
 definePageMeta({
   layout: false,
@@ -26,28 +26,21 @@ async function login() {
   loading.value = true;
   const { data, error } = await auth.login(form.value);
 
-
-  if(data.value!==null){
-
-    localStorage.setItem('user',JSON.stringify(data.value.data))
-    auth.setUser(data.value.data)
-    toast.success('User Successfully Login')
-    navigateTo('/')
-  }else{
+  if (data.value !== null) {
+    localStorage.setItem("user", JSON.stringify(data.value.data));
+    auth.setUser(data.value.data);
+    toast.success("User Successfully Login");
+    navigateTo("/");
+  } else {
     if (error.value.data.message.errors) {
       errorMessage.value = error.value.data.message.error.email[0];
-
     } else {
       errorMessage.value = error.value.data.message;
     }
-
-
-
   }
 
-
-   toast.success('User Successfully Login')
-   loading.value = false;
+  toast.success("User Successfully Login");
+  loading.value = false;
 }
 </script>
 <template>
@@ -62,13 +55,13 @@ async function login() {
         <!-- logo image-->
         <a href="#">
           <img
-            src="../public/assets/images/logo.png"
+            src="../public/assets/images/new-logo.png"
             class="w-28 absolute top-10 left-10 dark:hidden"
             alt=""
         /></a>
         <a href="#">
           <img
-            src="../public/assets/images/logo-light.png"
+            src="../public/assets/images/new-logo.png"
             class="w-28 absolute top-10 left-10 hidden dark:!block"
             alt=""
         /></a>
@@ -87,8 +80,8 @@ async function login() {
           <h2 class="text-2xl font-semibold mb-1.5">Sign in to your account</h2>
           <p class="text-sm text-gray-700 font-normal">
             If you haven’t signed up yet.
-            <a href="form-register.html" class="text-blue-700"
-              >Register here!</a
+            <NuxtLink to="/register" class="text-blue-700"
+              >Register here!</NuxtLink
             >
           </p>
         </div>
@@ -180,37 +173,37 @@ async function login() {
             </button>
           </div>
 
-          <div class="text-center flex items-center gap-6">
-            <hr class="flex-1 border-slate-200 dark:border-slate-800" />
-            Or continue with
-            <hr class="flex-1 border-slate-200 dark:border-slate-800" />
-          </div>
+          <!--          <div class="text-center flex items-center gap-6">-->
+          <!--            <hr class="flex-1 border-slate-200 dark:border-slate-800" />-->
+          <!--            Or continue with-->
+          <!--            <hr class="flex-1 border-slate-200 dark:border-slate-800" />-->
+          <!--          </div>-->
 
           <!-- social login -->
-          <div
-            class="flex gap-2"
-            uk-scrollspy="target: > *; cls: uk-animation-scale-up; delay: 400 ;repeat: true"
-          >
-            <a
-              href="#"
-              class="button flex-1 flex items-center gap-2 bg-primary text-white text-sm"
-            >
-              <ion-icon name="logo-facebook" class="text-lg"></ion-icon>
-              facebook
-            </a>
-            <a
-              href="#"
-              class="button flex-1 flex items-center gap-2 bg-sky-600 text-white text-sm"
-            >
-              <ion-icon name="logo-twitter"></ion-icon> twitter
-            </a>
-            <a
-              href="#"
-              class="button flex-1 flex items-center gap-2 bg-black text-white text-sm"
-            >
-              <ion-icon name="logo-github"></ion-icon> github
-            </a>
-          </div>
+          <!--          <div-->
+          <!--            class="flex gap-2"-->
+          <!--            uk-scrollspy="target: > *; cls: uk-animation-scale-up; delay: 400 ;repeat: true"-->
+          <!--          >-->
+          <!--            <a-->
+          <!--              href="#"-->
+          <!--              class="button flex-1 flex items-center gap-2 bg-primary text-white text-sm"-->
+          <!--            >-->
+          <!--              <ion-icon name="logo-facebook" class="text-lg"></ion-icon>-->
+          <!--              facebook-->
+          <!--            </a>-->
+          <!--            <a-->
+          <!--              href="#"-->
+          <!--              class="button flex-1 flex items-center gap-2 bg-sky-600 text-white text-sm"-->
+          <!--            >-->
+          <!--              <ion-icon name="logo-twitter"></ion-icon> twitter-->
+          <!--            </a>-->
+          <!--            <a-->
+          <!--              href="#"-->
+          <!--              class="button flex-1 flex items-center gap-2 bg-black text-white text-sm"-->
+          <!--            >-->
+          <!--              <ion-icon name="logo-github"></ion-icon> github-->
+          <!--            </a>-->
+          <!--          </div>-->
         </form>
       </div>
     </div>

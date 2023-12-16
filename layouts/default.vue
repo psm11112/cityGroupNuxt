@@ -1,6 +1,5 @@
 <template>
   <div id="wrapper">
-
     <!-- header -->
     <Navbar></Navbar>
     <!-- sidebar -->
@@ -8,6 +7,5 @@
     <slot></slot>
   </div>
   <!-- open chat box -->
-  <ChatBox></ChatBox>
-
+  <!-- <ChatBox></ChatBox> -->
 </template>

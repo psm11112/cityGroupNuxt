@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public:{
+      url:process.env.PUBLIC_URL
+    } ,
+  },
   loading: {
     color: 'blue',
     height: '10px',
@@ -29,7 +34,8 @@ export default defineNuxtConfig({
     '~/plugins/loadUser',
     '~/plugins/toast'
 
-  ]
+  ],
+  buildModules: ['nuxt-use-motion']
 
 
 

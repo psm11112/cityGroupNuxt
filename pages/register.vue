@@ -58,8 +58,8 @@ async function register(){
       <div class="w-full lg:max-w-sm mx-auto space-y-10" uk-scrollspy="target: > *; cls: uk-animation-scale-up; delay: 100 ;repeat: true">
 
         <!-- logo image-->
-        <a href="#"> <img src="../public/assets/images/logo.png" class="w-28 absolute top-10 left-10 dark:hidden" alt=""></a>
-        <a href="#"> <img src="../public/assets/images/logo-light.png" class="w-28 absolute top-10 left-10 hidden dark:!block" alt=""></a>
+        <a href="#"> <img src="../public/assets/images/new-logo.png" class="w-28 absolute top-10 left-10 dark:hidden" alt=""></a>
+        <a href="#"> <img src="../public/assets/images/new-logo.png" class="w-28 absolute top-10 left-10 hidden dark:!block" alt=""></a>
 
         <!-- logo icon optional -->
         <div class="hidden">
@@ -73,7 +73,7 @@ async function register(){
         <!-- title -->
         <div>
           <h2 class="text-2xl font-semibold mb-1.5"> Sign up to get started </h2>
-          <p class="text-sm text-gray-700 font-normal">If you already have an account, <a href="form-login.html" class="text-blue-700">Login here!</a></p>
+          <p class="text-sm text-gray-700 font-normal">If you already have an account, <NuxtLink to="/login" class="text-blue-700">Login here!</NuxtLink></p>
         </div>
 
 
@@ -83,11 +83,11 @@ async function register(){
           <div class="grid grid-cols-2 gap-4 gap-y-7">
 
             <!-- first name -->
-            <div class="col-span-2">
+            <div  v-auto-animate class="col-span-2">
               <label for="email" class="">Name</label>
               <div class="mt-2.5">
-                <input id="text" name="text" v-model="form.name" type="text"  autofocus="" placeholder="Enter Name"  class="!w-full !rounded-lg !bg-transparent !shadow-sm !border-slate-200 dark:!border-slate-800 dark:!bg-white/5">
-                <ErrorMessage v-if="errorMessage['name']"  v-auto-animate :errorMessage="errorMessage['name'][0]"></ErrorMessage>
+                <input id="text"  :class="errorMessage['name'] ? 'bg-red-50 border border-red-500 text-red-900':''" name="text" v-model="form.name" type="text"  autofocus="" placeholder="Enter Name"  class="w-full rounded-lg bg-transparent shadow-sm !border-slate-200 dark:!border-slate-800 dark:!bg-white/5">
+                <ErrorMessage v-if="errorMessage['name']"    :errorMessage="errorMessage['name'][0]"></ErrorMessage>
               </div>
             </div>
 
@@ -141,18 +141,18 @@ async function register(){
 
           </div>
 
-          <div class="text-center flex items-center gap-6">
-            <hr class="flex-1 border-slate-200 dark:border-slate-800">
-            Or continue with
-            <hr class="flex-1 border-slate-200 dark:border-slate-800">
-          </div>
+<!--          <div class="text-center flex items-center gap-6">-->
+<!--            <hr class="flex-1 border-slate-200 dark:border-slate-800">-->
+<!--            Or continue with-->
+<!--            <hr class="flex-1 border-slate-200 dark:border-slate-800">-->
+<!--          </div>-->
 
           <!-- social login -->
-          <div class="flex gap-2" uk-scrollspy="target: > *; cls: uk-animation-scale-up; delay: 400 ;repeat: true">
-            <a href="#" class="button flex-1 flex items-center gap-2 bg-primary text-white text-sm"> <ion-icon name="logo-facebook" class="text-lg"></ion-icon> facebook  </a>
-            <a href="#" class="button flex-1 flex items-center gap-2 bg-sky-600 text-white text-sm"> <ion-icon name="logo-twitter"></ion-icon> twitter  </a>
-            <a href="#" class="button flex-1 flex items-center gap-2 bg-black text-white text-sm"> <ion-icon name="logo-github"></ion-icon> github  </a>
-          </div>
+<!--          <div class="flex gap-2" uk-scrollspy="target: > *; cls: uk-animation-scale-up; delay: 400 ;repeat: true">-->
+<!--            <a href="#" class="button flex-1 flex items-center gap-2 bg-primary text-white text-sm"> <ion-icon name="logo-facebook" class="text-lg"></ion-icon> facebook  </a>-->
+<!--            <a href="#" class="button flex-1 flex items-center gap-2 bg-sky-600 text-white text-sm"> <ion-icon name="logo-twitter"></ion-icon> twitter  </a>-->
+<!--            <a href="#" class="button flex-1 flex items-center gap-2 bg-black text-white text-sm"> <ion-icon name="logo-github"></ion-icon> github  </a>-->
+<!--          </div>-->
 
         </form>
 
