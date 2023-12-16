@@ -22,7 +22,7 @@
 
       <!-- event feautred -->
 
-      <div class="sm:my-6 my-3 flex items-center justify-between md:mt-10">
+      <div  class="sm:my-6 my-3 flex items-center justify-between md:mt-10">
         <div>
           <h2 class="text-xl font-semibold">Featured</h2>
           <p class="font-normal text-sm text-gray-500 leading-6">
