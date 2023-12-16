@@ -14,7 +14,7 @@ onMounted(async () => {
   nextTick(async () => {
 
 
-    const { data } = await useFetch("/list/", {
+    const { data } = await useFetch("/list", {
       baseURL: baseUrl.public.url +"/api",
     });
 
