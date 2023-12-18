@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     continuous: true,
   },
 
-  modules: ["nuxt-icon", "@nuxtjs/tailwindcss", '@pinia/nuxt','@vueuse/nuxt','@formkit/auto-animate/nuxt'],
+  modules: ["nuxt-icon", "@nuxtjs/tailwindcss", '@pinia/nuxt','@vueuse/nuxt','@formkit/auto-animate/nuxt', 'nuxt-primevue'],
   app: {
     head: {
 

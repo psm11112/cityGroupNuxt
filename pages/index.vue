@@ -1,6 +1,8 @@
 <script setup>
 import "../public/assets/css/tailwind.css";
 import "../public/assets/css/style.css";
+import Chip from 'primevue/chip';
+
 import { ref } from "vue";
 import {useRuntimeConfig} from "nuxt/app";
 
@@ -69,6 +71,9 @@ onMounted(async () => {
               :key="index"
               class="md:w-1/5 sm:w-1/3 w-1/2"
             >
+
+
+
               <a href="#">
                 <div class="relative rounded-lg overflow-hidden">
                   <img
@@ -81,8 +86,22 @@ onMounted(async () => {
                   <div
                     class="w-full bottom-0 absolute left-0 bg-gradient-to-t from-black/60 pt-10"
                   >
-                    <div class="text-white p-5">
-                      <div class="text-sm font-light">{{ item.title }}</div>
+<div class="flex space-x-2 text-xs pl-2 ">
+                    <Chip v-for="sub in JSON.parse(item.sub_category_ids)"  :label="sub.name" class="bg-green-400 rounded p-1" />
+</div>
+                    <div class="text-white p-2">
+
+
+                      <div class="text-sm font-light">
+
+
+                        {{ item.title }}
+
+                        <div class="text-2xs">
+                        {{item.city.city_name}},
+                        {{item.states.state_name}}
+                        </div>
+                      </div>
                       <div class="text-lg leading-3 mt-1.5">
                         {{ item.parent_category.name }}
                       </div>

@@ -19,6 +19,7 @@
     "autoprefixer": "^10.4.14",
     "nuxt": "^3.6.2",
     "nuxt-icon": "^0.5.0",
+    "nuxt-primevue": "^0.2.2",
     "nuxt-use-motion": "^2.0.0-beta.11",
     "postcss": "^8.4.27",
     "prisma": "^5.3.1",
