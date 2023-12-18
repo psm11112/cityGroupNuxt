@@ -36,7 +36,7 @@
                   <div class="card uk-transition-toggle">
                     <a href="timeline-page.html">
                       <div class="card-media sm:aspect-[2/1.9] h-40">
-                        <img src="assets/images/avatars/avatar-1.jpg" alt="">
+                        <img src="../../public/assets/images/avatars/avatar-1.jpg" alt="">
                         <div class="card-overly"></div>
                       </div>
                     </a>
@@ -57,7 +57,7 @@
                   <div class="card uk-transition-toggle">
                     <a href="timeline-page.html">
                       <div class="card-media sm:aspect-[2/1.9] h-40">
-                        <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                        <img src="../../public/assets/images/avatars/avatar-2.jpg" alt="">
                         <div class="card-overly"></div>
                       </div>
                     </a>
@@ -78,7 +78,7 @@
                   <div class="card uk-transition-toggle">
                     <a href="timeline-page.html">
                       <div class="card-media sm:aspect-[2/1.9] h-40">
-                        <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                        <img src="../../public/assets/images/avatars/avatar-3.jpg" alt="">
                         <div class="card-overly"></div>
                       </div>
                     </a>
@@ -99,7 +99,7 @@
                   <div class="card uk-transition-toggle">
                     <a href="timeline-page.html">
                       <div class="card-media sm:aspect-[2/1.9] h-40">
-                        <img src="assets/images/avatars/avatar-4.jpg" alt="">
+                        <img src="../../public/assets/images/avatars/avatar-4.jpg" alt="">
                         <div class="card-overly"></div>
                       </div>
                     </a>
@@ -120,7 +120,7 @@
                   <div class="card uk-transition-toggle">
                     <a href="timeline-page.html">
                       <div class="card-media sm:aspect-[2/1.9] h-40">
-                        <img src="assets/images/avatars/avatar-6.jpg" alt="">
+                        <img src="../../public/assets/images/avatars/avatar-6.jpg" alt="">
                         <div class="card-overly"></div>
                       </div>
                     </a>
@@ -156,7 +156,7 @@
               <div class="card">
                 <a href="timeline-page.html">
                   <div class="card-media sm:aspect-[2/1.7] h-40">
-                    <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-3.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -169,7 +169,7 @@
               <div class="card">
                 <a href="timeline-page.html">
                   <div class="card-media sm:aspect-[2/1.7] h-40">
-                    <img src="assets/images/avatars/avatar-4.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-4.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -182,7 +182,7 @@
               <div class="card">
                 <a href="timeline-page.html">
                   <div class="card-media sm:aspect-[2/1.7] h-40">
-                    <img src="assets/images/avatars/avatar-5.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-5.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -195,7 +195,7 @@
               <div class="card">
                 <a href="timeline-page.html">
                   <div class="card-media sm:aspect-[2/1.7] h-40">
-                    <img src="assets/images/avatars/avatar-6.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-6.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -208,7 +208,7 @@
               <div class="card">
                 <a href="timeline-page.html">
                   <div class="card-media sm:aspect-[2/1.7] h-40">
-                    <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-2.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -221,7 +221,7 @@
               <div class="card">
                 <a href="timeline-page.html">
                   <div class="card-media sm:aspect-[2/1.7] h-40">
-                    <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-3.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -234,7 +234,7 @@
               <div class="card">
                 <a href="timeline-page.html">
                   <div class="card-media sm:aspect-[2/1.7] h-40">
-                    <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-3.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -247,7 +247,7 @@
               <div class="card">
                 <a href="timeline-page.html">
                   <div class="card-media sm:aspect-[2/1.7] h-40">
-                    <img src="assets/images/avatars/avatar-4.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-4.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -260,7 +260,7 @@
               <div class="card">
                 <a href="timeline-page.html">
                   <div class="card-media sm:aspect-[2/1.7] h-40">
-                    <img src="assets/images/avatars/avatar-5.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-5.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -285,7 +285,7 @@
               <div class="card flex space-x-5 p-5">
                 <a href="timeline-page.html">
                   <div class="card-media w-16 h-16 shrink-0 rounded-full">
-                    <img src="assets/images/avatars/avatar-1.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-1.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -311,7 +311,7 @@
               <div class="card flex space-x-5 p-5">
                 <a href="timeline-page.html">
                   <div class="card-media w-16 h-16 shrink-0 rounded-full">
-                    <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-2.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -337,7 +337,7 @@
               <div class="card flex space-x-5 p-5">
                 <a href="timeline-page.html">
                   <div class="card-media w-16 h-16 shrink-0 rounded-full">
-                    <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-3.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -363,7 +363,7 @@
               <div class="card flex space-x-5 p-5">
                 <a href="timeline-page.html">
                   <div class="card-media w-16 h-16 shrink-0 rounded-full">
-                    <img src="assets/images/avatars/avatar-4.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-4.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -389,7 +389,7 @@
               <div class="card flex space-x-5 p-5">
                 <a href="timeline-page.html">
                   <div class="card-media w-16 h-16 shrink-0 rounded-full">
-                    <img src="assets/images/avatars/avatar-5.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-5.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -415,7 +415,7 @@
               <div class="card flex space-x-5 p-5">
                 <a href="timeline-page.html">
                   <div class="card-media w-16 h-16 shrink-0 rounded-full">
-                    <img src="assets/images/avatars/avatar-6.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-6.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -441,7 +441,7 @@
               <div class="card flex space-x-5 p-5">
                 <a href="timeline-page.html">
                   <div class="card-media w-16 h-16 shrink-0 rounded-full">
-                    <img src="assets/images/avatars/avatar-1.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-1.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -467,7 +467,7 @@
               <div class="card flex space-x-5 p-5">
                 <a href="timeline-page.html">
                   <div class="card-media w-16 h-16 shrink-0 rounded-full">
-                    <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                    <img src="../../public/assets/images/avatars/avatar-2.jpg" alt="">
                     <div class="card-overly"></div>
                   </div>
                 </a>
@@ -505,11 +505,11 @@
 
               <div class="card">
                 <div class="card-media sm:h-24 h-16">
-                  <img src="assets/images/group/group-cover-1.jpg" alt="">
+                  <img src="../../public/assets/images/group/group-cover-1.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
                 <div class="card-body relative z-10">
-                  <img src="assets/images/avatars/avatar-1.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
+                  <img src="../../public/assets/images/avatars/avatar-1.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
                   <h4 class="card-title"> Jesse Steeve </h4>
                   <p class="card-text"> 125k Following1 </p>
 
@@ -522,11 +522,11 @@
               </div>
               <div class="card">
                 <div class="card-media sm:h-24 h-16">
-                  <img src="assets/images/group/group-cover-2.jpg" alt="">
+                  <img src="../../public/assets/images/group/group-cover-2.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
                 <div class="card-body relative z-10">
-                  <img src="assets/images/avatars/avatar-2.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
+                  <img src="../../public/assets/images/avatars/avatar-2.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
                   <h4 class="card-title"> John Michael </h4>
                   <p class="card-text"> 260k Following </p>
 
@@ -539,11 +539,11 @@
               </div>
               <div class="card">
                 <div class="card-media sm:h-24 h-16">
-                  <img src="assets/images/group/group-cover-3.jpg" alt="">
+                  <img src="../../public/assets/images/group/group-cover-3.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
                 <div class="card-body relative z-10">
-                  <img src="assets/images/avatars/avatar-3.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
+                  <img src="../../public/assets/images/avatars/avatar-3.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
                   <h4 class="card-title"> Monroe Parker </h4>
                   <p class="card-text"> 125k Following </p>
 
@@ -556,11 +556,11 @@
               </div>
               <div class="card">
                 <div class="card-media sm:h-24 h-16">
-                  <img src="assets/images/group/group-cover-4.jpg" alt="">
+                  <img src="../../public/assets/images/group/group-cover-4.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
                 <div class="card-body relative z-10">
-                  <img src="assets/images/avatars/avatar-4.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
+                  <img src="../../public/assets/images/avatars/avatar-4.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
                   <h4 class="card-title"> Martin Gray </h4>
                   <p class="card-text"> 320k Following </p>
 
@@ -573,11 +573,11 @@
               </div>
               <div class="card">
                 <div class="card-media sm:h-24 h-16">
-                  <img src="assets/images/group/group-cover-5.jpg" alt="">
+                  <img src="../../public/assets/images/group/group-cover-5.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
                 <div class="card-body relative z-10">
-                  <img src="assets/images/avatars/avatar-5.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
+                  <img src="../../public/assets/images/avatars/avatar-5.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
                   <h4 class="card-title"> James Lewis </h4>
                   <p class="card-text"> 192k Following </p>
 
@@ -590,11 +590,11 @@
               </div>
               <div class="card">
                 <div class="card-media sm:h-24 h-16">
-                  <img src="assets/images/group/group-cover-1.jpg" alt="">
+                  <img src="../../public/assets/images/group/group-cover-1.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
                 <div class="card-body relative z-10">
-                  <img src="assets/images/avatars/avatar-1.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
+                  <img src="../../public/assets/images/avatars/avatar-1.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
                   <h4 class="card-title"> Jesse Steeve </h4>
                   <p class="card-text"> 125k Following1 </p>
 
@@ -607,11 +607,11 @@
               </div>
               <div class="card">
                 <div class="card-media sm:h-24 h-16">
-                  <img src="assets/images/group/group-cover-1.jpg" alt="">
+                  <img src="../../public/assets/images/group/group-cover-1.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
                 <div class="card-body relative z-10">
-                  <img src="assets/images/avatars/avatar-1.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
+                  <img src="../../public/assets/images/avatars/avatar-1.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
                   <h4 class="card-title"> Jesse Steeve </h4>
                   <p class="card-text"> 125k Following1 </p>
 
@@ -624,11 +624,11 @@
               </div>
               <div class="card">
                 <div class="card-media sm:h-24 h-16">
-                  <img src="assets/images/group/group-cover-3.jpg" alt="">
+                  <img src="../../public/assets/images/group/group-cover-3.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
                 <div class="card-body relative z-10">
-                  <img src="assets/images/avatars/avatar-3.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
+                  <img src="../../public/assets/images/avatars/avatar-3.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
                   <h4 class="card-title"> Monroe Parker </h4>
                   <p class="card-text"> 125k Following </p>
 
@@ -641,11 +641,11 @@
               </div>
               <div class="card">
                 <div class="card-media sm:h-24 h-16">
-                  <img src="assets/images/group/group-cover-2.jpg" alt="">
+                  <img src="../../public/assets/images/group/group-cover-2.jpg" alt="">
                   <div class="card-overly"></div>
                 </div>
                 <div class="card-body relative z-10">
-                  <img src="assets/images/avatars/avatar-2.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
+                  <img src="../../public/assets/images/avatars/avatar-2.jpg" alt="" class="w-10 rounded-full sm:mb-2 mb-1 shadow -mt-8 relative border-2 border-white">
                   <h4 class="card-title"> John Michael </h4>
                   <p class="card-text"> 260k Following </p>
 
@@ -689,7 +689,7 @@
 
               <div class="side-list-item">
                 <a href="timeline-group.html">
-                  <img src="assets/images/avatars/avatar-2.jpg" alt="" class="side-list-image rounded-full">
+                  <img src="../../public/assets/images/avatars/avatar-2.jpg" alt="" class="side-list-image rounded-full">
                 </a>
                 <div class="flex-1">
                   <a href="timeline-group.html"><h4 class="side-list-title">  John Michael</h4></a>
@@ -699,7 +699,7 @@
               </div>
               <div class="side-list-item">
                 <a href="timeline-group.html">
-                  <img src="assets/images/avatars/avatar-4.jpg" alt="" class="side-list-image rounded-full">
+                  <img src="../../public/assets/images/avatars/avatar-4.jpg" alt="" class="side-list-image rounded-full">
                 </a>
                 <div class="flex-1">
                   <a href="timeline-group.html"><h4 class="side-list-title"> Martin Gray</h4></a>
@@ -709,7 +709,7 @@
               </div>
               <div class="side-list-item">
                 <a href="timeline-group.html">
-                  <img src="assets/images/avatars/avatar-3.jpg" alt="" class="side-list-image rounded-full">
+                  <img src="../../public/assets/images/avatars/avatar-3.jpg" alt="" class="side-list-image rounded-full">
                 </a>
                 <div class="flex-1">
                   <a href="timeline-group.html"><h4 class="side-list-title"> Monroe Parker</h4></a>
@@ -719,7 +719,7 @@
               </div>
               <div class="side-list-item">
                 <a href="timeline-group.html">
-                  <img src="assets/images/avatars/avatar-1.jpg" alt="" class="side-list-image rounded-full">
+                  <img src="../../public/assets/images/avatars/avatar-1.jpg" alt="" class="side-list-image rounded-full">
                 </a>
                 <div class="flex-1">
                   <a href="timeline-group.html"><h4 class="side-list-title"> Jesse Steeve</h4></a>
@@ -744,7 +744,7 @@
 
               <div class="side-list-item">
                 <a href="timeline-group.html">
-                  <img src="assets/images/avatars/avatar-2.jpg" alt="" class="side-list-image rounded-full">
+                  <img src="../../public/assets/images/avatars/avatar-2.jpg" alt="" class="side-list-image rounded-full">
                 </a>
                 <div class="flex-1">
                   <a href="timeline-group.html"><h4 class="side-list-title">  John Michael</h4></a>
@@ -754,7 +754,7 @@
               </div>
               <div class="side-list-item">
                 <a href="timeline-group.html">
-                  <img src="assets/images/avatars/avatar-4.jpg" alt="" class="side-list-image rounded-full">
+                  <img src="../../public/assets/images/avatars/avatar-4.jpg" alt="" class="side-list-image rounded-full">
                 </a>
                 <div class="flex-1">
                   <a href="timeline-group.html"><h4 class="side-list-title"> Martin Gray</h4></a>
@@ -764,7 +764,7 @@
               </div>
               <div class="side-list-item">
                 <a href="timeline-group.html">
-                  <img src="assets/images/avatars/avatar-3.jpg" alt="" class="side-list-image rounded-full">
+                  <img src="../../public/assets/images/avatars/avatar-3.jpg" alt="" class="side-list-image rounded-full">
                 </a>
                 <div class="flex-1">
                   <a href="timeline-group.html"><h4 class="side-list-title"> Monroe Parker</h4></a>
@@ -774,7 +774,7 @@
               </div>
               <div class="side-list-item">
                 <a href="timeline-group.html">
-                  <img src="assets/images/avatars/avatar-1.jpg" alt="" class="side-list-image rounded-full">
+                  <img src="../../public/assets/images/avatars/avatar-1.jpg" alt="" class="side-list-image rounded-full">
                 </a>
                 <div class="flex-1">
                   <a href="timeline-group.html"><h4 class="side-list-title"> Jesse Steeve</h4></a>
@@ -801,7 +801,7 @@
 
               <div class="side-list-item">
                 <a href="timeline-group.html">
-                  <img src="assets/images/avatars/avatar-2.jpg" alt="" class="side-list-image rounded-full">
+                  <img src="../../public/assets/images/avatars/avatar-2.jpg" alt="" class="side-list-image rounded-full">
                 </a>
                 <div class="flex-1">
                   <a href="timeline-group.html"><h4 class="side-list-title">  John Michael</h4></a>
@@ -811,7 +811,7 @@
               </div>
               <div class="side-list-item">
                 <a href="timeline-group.html">
-                  <img src="assets/images/avatars/avatar-4.jpg" alt="" class="side-list-image rounded-full">
+                  <img src="../../public/assets/images/avatars/avatar-4.jpg" alt="" class="side-list-image rounded-full">
                 </a>
                 <div class="flex-1">
                   <a href="timeline-group.html"><h4 class="side-list-title"> Martin Gray</h4></a>
@@ -821,7 +821,7 @@
               </div>
               <div class="side-list-item">
                 <a href="timeline-group.html">
-                  <img src="assets/images/avatars/avatar-3.jpg" alt="" class="side-list-image rounded-full">
+                  <img src="../../public/assets/images/avatars/avatar-3.jpg" alt="" class="side-list-image rounded-full">
                 </a>
                 <div class="flex-1">
                   <a href="timeline-group.html"><h4 class="side-list-title"> Monroe Parker</h4></a>
