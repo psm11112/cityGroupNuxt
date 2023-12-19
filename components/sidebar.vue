@@ -71,7 +71,7 @@ onMounted(async () => {
               <li v-for="(item,index) in category" :key="index">
                   <NuxtLink to="/df">
                     <img
-                        :src=" baseUrl.public.url+ '/public/storage/' + item.image_url"
+                        :src="baseUrl.public.url+ '/public/storage/' + item.image_url"
                         :alt="item.name"
                         class="w-8 p-1 border-2 border-gray-500 rounded-full object-cover bg-white"/>
                     <span> {{item.name}} </span>
