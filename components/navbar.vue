@@ -1098,7 +1098,7 @@ async function logout() {
                     Upgrade To Premium
                   </div>
                 </a>
-                <a :href="  +'/admin-login/' + token">
+                <a :href=" baseUrl.public.url  +'/admin-login/' + token">
                   <div
                     class="flex items-center gap-2.5 hover:bg-secondery p-2 px-2.5 rounded-md dark:hover:bg-white/10"
                   >

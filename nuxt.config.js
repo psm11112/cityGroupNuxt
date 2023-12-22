@@ -3,7 +3,8 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public:{
-      url:process.env.PUBLIC_URL
+      url:process.env.PUBLIC_URL,
+      image_url:process.env.BASE_IMAGE_URL,
     } ,
   },
   loading: {
@@ -14,7 +15,7 @@ export default defineNuxtConfig({
     continuous: true,
   },
 
-  modules: ["nuxt-icon", "@nuxtjs/tailwindcss", '@pinia/nuxt','@vueuse/nuxt','@formkit/auto-animate/nuxt', 'nuxt-primevue'],
+  modules: ["nuxt-icon", "@nuxtjs/tailwindcss", '@pinia/nuxt','@vueuse/nuxt','@formkit/auto-animate/nuxt', 'nuxt-primevue','vue3-carousel-nuxt'],
   app: {
     head: {
 
