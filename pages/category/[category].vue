@@ -9,9 +9,6 @@ onMounted(async () => {
  // loading.value=true;
 
   const route = useRoute();
-
-  console.log(route.params.category);
-
     const { data } = await useFetch("/category/"+route.params.category, {
       baseURL: baseUrl.public.url +"/api",
     });
@@ -31,7 +28,6 @@ async function getList(id){
 
   //
 
-  console.log(data.value.data);
    list.value=data.value
 
 
@@ -88,7 +84,7 @@ async function getList(id){
 
                   <div class="flex space-x-1 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.7em" height="1.7em" viewBox="0 0 256 256"><path fill="currentColor" d="M128 20a108 108 0 1 0 108 108A108.12 108.12 0 0 0 128 20ZM79.57 196.57a60 60 0 0 1 96.86 0a83.72 83.72 0 0 1-96.86 0ZM100 120a28 28 0 1 1 28 28a28 28 0 0 1-28-28Zm94 59.94a83.48 83.48 0 0 0-29-23.42a52 52 0 1 0-74 0a83.48 83.48 0 0 0-29 23.42a84 84 0 1 1 131.9 0Z"></path></svg>
-                    <span>{{item.user.name}}</span>
+                    <span v-if="item.user">{{item.user.name}}</span>
                   </div>
                   <div class="text-xs pl-5">{{item.createdAtHumansReadable}}</div>
                    <button type="button" class="button bg-primary text-white">Follow</button>
