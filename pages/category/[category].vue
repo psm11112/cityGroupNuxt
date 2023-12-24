@@ -9,6 +9,11 @@ const baseUrl=useRuntimeConfig()
 const country=ref('');
 let country_id=ref('');
 let categoryId=ref('');
+let stataList=ref('');
+let stats_id=ref('');
+let cityList=ref('');
+let city_id=ref('');
+let loading=ref(false);
 
 
 const route = useRoute();
@@ -25,7 +30,7 @@ onMounted(async () => {
    categoryName.value = data.value.name;
    categoryId.value=data.value.id;
    getList(data.value.id);
-  getCountry();
+   getCountry();
 
 });
 
@@ -47,24 +52,53 @@ async function getCountry(){
 }
 
 async function getListByCountry(filed){
+  console.log("Field:"+filed);
+  let value='';
+  if(filed==="country_id"){
+     value=country_id.value
+  }
+  if(filed==="state_id"){
+     value=stats_id.value
+  }
+  if(filed==="city_id"){
+    value=city_id.value
+  }
 
-  console.log("Category:-"+categoryId.value);
-  console.log("Field:-"+filed);
-  console.log("country Id"+country_id.value);
+  console.log("value:-"+value);
 
-  const { data } = await useFetch("/list/search/"+ categoryId.value+"/"+filed+"/"+country_id.value, {
+  const { data } = await useFetch("/list/search/"+ categoryId.value+"/"+filed+"/"+value, {
     baseURL: baseUrl.public.url +"/api",
   });
-
-  console.log(data)
-
   list.value=data.value
+  getStats(country_id.value);
+  getCity(stats_id.value);
 
-
-
-
-  console.log(country_id.value);
 }
+
+async function getStats(id){
+
+  loading=true;
+  // /stats/{country_id}
+  const { data } = await useFetch("/stats/"+id , {
+    baseURL: baseUrl.public.url +"/api",
+  });
+  stataList.value=data.value
+  loading=false;
+
+}
+
+
+async function getCity(statsId){
+
+  loading=true;
+  const { data } = await useFetch("/city/"+statsId , {
+    baseURL: baseUrl.public.url +"/api",
+  });
+  cityList.value=data.value
+  loading=false;
+
+}
+
 
 </script>
 <template>
@@ -78,8 +112,9 @@ async function getListByCountry(filed){
 
           <div class="page-heading p-2  lg:block md:p-1 lg:p-1 flex justify-between">
           <div>
-            {{country.name}}
-            <h1 class="page-title"> {{categoryName}}</h1>
+            <h1 class="page-title"> {{categoryName}}
+            {{loading}}
+            </h1>
           </div>
             <div class=" lg:hidden  bg-green-400 rounded-full p-2 ">
             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 256 256"><path fill="currentColor" d="M234.29 47.91A20 20 0 0 0 216 36H40a20 20 0 0 0-14.8 33.45l.12.14L92 140.75V216a20 20 0 0 0 31.1 16.64l32-21.33a20 20 0 0 0 8.9-16.65v-53.91l66.67-71.16l.12-.14a20 20 0 0 0 3.5-21.54Zm-88.88 77.58a19.93 19.93 0 0 0-5.41 13.68v53.35l-24 16v-69.35a19.93 19.93 0 0 0-5.41-13.68L49.23 60h157.54Z"></path></svg>
@@ -165,6 +200,7 @@ async function getListByCountry(filed){
 
                 <Dropdown v-model="country_id" :options="country" filter optionLabel="name" option-value="id" placeholder="Select a Country"
                           class="w-full md:w-14rem"
+
                           :pt="{
                                 root:{class: 'backGrounAndText'},
                                 list: { class: 'backGrounAndText p-4 w-full' },
@@ -173,10 +209,7 @@ async function getListByCountry(filed){
                                 header:{class:'backGrounAndText p-2 w-full'},
                                 filterContainer:{class:'backGrounAndText p-2 w-full'},
                                  }"
-                          @change="getListByCountry('country_id')"
-
-
-                >
+                          @change="getListByCountry('country_id')">
 
 
                 </Dropdown>
@@ -185,8 +218,10 @@ async function getListByCountry(filed){
 
               </div>
               <div class="side-list-item">
-                <Dropdown v-model="category_id" :options="country" filter optionLabel="name" placeholder="Select a Country"
+                <Dropdown v-model="stats_id" :options="stataList" filter optionLabel="state_name" option-value="id" placeholder="Select a State"
                           class="w-full md:w-14rem"
+                          @change="getListByCountry('state_id')"
+                          :loading=loading
                           :pt="{
                                 root:{class: 'backGrounAndText'},
                                 list: { class: 'backGrounAndText p-4 w-full' },
@@ -194,7 +229,30 @@ async function getListByCountry(filed){
                                 input:{class:'input w-full'},
                                 header:{class:'backGrounAndText p-2 w-full'},
                                 filterContainer:{class:'backGrounAndText p-2 w-full'},
-                                 }">
+                                 }"
+
+
+                >
+
+
+                </Dropdown>
+              </div>
+              <div class="side-list-item">
+                <Dropdown v-model="city_id" :options="cityList" filter optionLabel="city_name" option-value="id" placeholder="Select a City"
+                          class="w-full md:w-14rem"
+                          @change="getListByCountry('city_id')"
+                          :loading=loading
+                          :pt="{
+                                root:{class: 'backGrounAndText'},
+                                list: { class: 'backGrounAndText p-4 w-full' },
+                                filterInput:{class:'backGrounAndText p-2 w-full'},
+                                input:{class:'input w-full'},
+                                header:{class:'backGrounAndText p-2 w-full'},
+                                filterContainer:{class:'backGrounAndText p-2 w-full'},
+                                 }"
+
+
+                >
 
 
                 </Dropdown>
