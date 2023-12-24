@@ -1,39 +1,70 @@
 <script setup>
 import { ref,onMounted } from "vue";
 import {useRuntimeConfig} from "nuxt/app";
+import Dropdown from 'primevue/dropdown';
+
 const categoryName=ref(null);
 const list=ref(null);
 const baseUrl=useRuntimeConfig()
+const country=ref('');
+let country_id=ref('');
+let categoryId=ref('');
+
+
+const route = useRoute();
 
 onMounted(async () => {
  // loading.value=true;
 
-  const route = useRoute();
+
     const { data } = await useFetch("/category/"+route.params.category, {
       baseURL: baseUrl.public.url +"/api",
     });
   //
 
    categoryName.value = data.value.name;
+   categoryId.value=data.value.id;
    getList(data.value.id);
+  getCountry();
 
 });
 
 
 async function getList(id){
-
   const { data } = await useFetch("/list/"+id, {
     baseURL: baseUrl.public.url +"/api",
   });
-
-  //
-
    list.value=data.value
-
-
-
 }
 
+async function getCountry(){
+  const { data } = await useFetch("/country", {
+    baseURL: baseUrl.public.url +"/api",
+  });
+
+
+  country.value=data.value
+}
+
+async function getListByCountry(filed){
+
+  console.log("Category:-"+categoryId.value);
+  console.log("Field:-"+filed);
+  console.log("country Id"+country_id.value);
+
+  const { data } = await useFetch("/list/search/"+ categoryId.value+"/"+filed+"/"+country_id.value, {
+    baseURL: baseUrl.public.url +"/api",
+  });
+
+  console.log(data)
+
+  list.value=data.value
+
+
+
+
+  console.log(country_id.value);
+}
 
 </script>
 <template>
@@ -45,8 +76,16 @@ async function getList(id){
 
         <div class="max-w-[680px] w-full mx-auto">
 
-          <div class="page-heading">
+          <div class="page-heading p-2  lg:block md:p-1 lg:p-1 flex justify-between">
+          <div>
+            {{country.name}}
             <h1 class="page-title"> {{categoryName}}</h1>
+          </div>
+            <div class=" lg:hidden  bg-green-400 rounded-full p-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 256 256"><path fill="currentColor" d="M234.29 47.91A20 20 0 0 0 216 36H40a20 20 0 0 0-14.8 33.45l.12.14L92 140.75V216a20 20 0 0 0 31.1 16.64l32-21.33a20 20 0 0 0 8.9-16.65v-53.91l66.67-71.16l.12-.14a20 20 0 0 0 3.5-21.54Zm-88.88 77.58a19.93 19.93 0 0 0-5.41 13.68v53.35l-24 16v-69.35a19.93 19.93 0 0 0-5.41-13.68L49.23 60h157.54Z"></path></svg>
+            </div>
+
+
           </div>
 
           <!-- page feautred -->
@@ -107,160 +146,60 @@ async function getList(id){
       <!-- sidebar -->
       <div class="2xl:w-[380px] lg:w-[330px] w-full">
 
-        <div  class="lg:space-y-6 space-y-4 lg:pb-8 max-lg:grid sm:grid-cols-2 max-lg:gap-6"
+        <div  class="lg:space-y-8 space-y-10 lg:pb-1 max-lg:grid sm:grid-cols-2 max-lg:gap-6 pt-24"
               uk-sticky="media: 1024; end: #js-oversized; offset: 80">
 
-          <div class="box p-5 px-6">
+          <div class="box p-5 px-6 ">
 
             <div class="flex items-baseline justify-between text-black dark:text-white">
-              <h3 class="font-bold text-base"> Pages You Manage </h3>
-              <a href="#" class="text-sm text-blue-500">See all</a>
+              <h3 class="font-bold text-base"> Total Results Found: 1 Results </h3>
+
             </div>
 
             <div class="side-list">
 
-              <div class="side-list-item">
-                <a href="timeline-group.html">
+              <div class="flex items-center p-1">Filter by</div>
 
-                </a>
-                <div class="flex-1">
-                  <a href="timeline-group.html"><h4 class="side-list-title">  John Michael</h4></a>
-                  <div class="side-list-info"> Updated 2 day ago </div>
-                </div>
-                <button class="button bg-secondery">Edit</button>
+              <div v-if="country" class="side-list-item">
+
+
+                <Dropdown v-model="country_id" :options="country" filter optionLabel="name" option-value="id" placeholder="Select a Country"
+                          class="w-full md:w-14rem"
+                          :pt="{
+                                root:{class: 'backGrounAndText'},
+                                list: { class: 'backGrounAndText p-4 w-full' },
+                                filterInput:{class:'backGrounAndText p-2 w-full'},
+                                input:{class:'input w-full'},
+                                header:{class:'backGrounAndText p-2 w-full'},
+                                filterContainer:{class:'backGrounAndText p-2 w-full'},
+                                 }"
+                          @change="getListByCountry('country_id')"
+
+
+                >
+
+
+                </Dropdown>
+
+
+
               </div>
               <div class="side-list-item">
-                <a href="timeline-group.html">
+                <Dropdown v-model="category_id" :options="country" filter optionLabel="name" placeholder="Select a Country"
+                          class="w-full md:w-14rem"
+                          :pt="{
+                                root:{class: 'backGrounAndText'},
+                                list: { class: 'backGrounAndText p-4 w-full' },
+                                filterInput:{class:'backGrounAndText p-2 w-full'},
+                                input:{class:'input w-full'},
+                                header:{class:'backGrounAndText p-2 w-full'},
+                                filterContainer:{class:'backGrounAndText p-2 w-full'},
+                                 }">
 
-                </a>
-                <div class="flex-1">
-                  <a href="timeline-group.html"><h4 class="side-list-title"> Martin Gray</h4></a>
-                  <div class="side-list-info"> Updated 4 day ago </div>
-                </div>
-                <button class="button bg-secondery">Edit</button>
-              </div>
-              <div class="side-list-item">
-                <a href="timeline-group.html">
 
-                </a>
-                <div class="flex-1">
-                  <a href="timeline-group.html"><h4 class="side-list-title"> Monroe Parker</h4></a>
-                  <div class="side-list-info"> Updated 1 week ago </div>
-                </div>
-                <button class="button bg-secondery">Edit</button>
-              </div>
-              <div class="side-list-item">
-                <a href="timeline-group.html">
-
-                </a>
-                <div class="flex-1">
-                  <a href="timeline-group.html"><h4 class="side-list-title"> Jesse Steeve</h4></a>
-                  <div class="side-list-info"> Updated 2 month ago </div>
-                </div>
-                <button class="button bg-secondery">Edit</button>
+                </Dropdown>
               </div>
 
-            </div>
-
-          </div>
-
-          <!-- Groups You Manage  -->
-          <div class="bg-white rounded-xl shadow p-5 px-6 border1 dark:bg-dark2">
-
-            <div class="flex items-baseline justify-between text-black dark:text-white">
-              <h3 class="font-bold text-base"> pages you manage </h3>
-              <a href="#" class="text-sm text-blue-500">See all</a>
-            </div>
-
-            <div class="side-list">
-
-              <div class="side-list-item">
-                <a href="timeline-group.html">
-
-                </a>
-                <div class="flex-1">
-                  <a href="timeline-group.html"><h4 class="side-list-title">  John Michael</h4></a>
-                  <div class="side-list-info"> Updated 6 day ago </div>
-                </div>
-                <button class="button bg-primary-soft text-primary dark:text-white">Like</button>
-              </div>
-              <div class="side-list-item">
-                <a href="timeline-group.html">
-
-                </a>
-                <div class="flex-1">
-                  <a href="timeline-group.html"><h4 class="side-list-title"> Martin Gray</h4></a>
-                  <div class="side-list-info"> Updated 2 month ago </div>
-                </div>
-                <button class="button bg-primary-soft text-primary dark:text-white">Like</button>
-              </div>
-              <div class="side-list-item">
-                <a href="timeline-group.html">
-
-                </a>
-                <div class="flex-1">
-                  <a href="timeline-group.html"><h4 class="side-list-title"> Monroe Parker</h4></a>
-                  <div class="side-list-info"> Updated 1 week ago </div>
-                </div>
-                <button class="button bg-primary-soft text-primary dark:text-white">Like</button>
-              </div>
-              <div class="side-list-item">
-                <a href="timeline-group.html">
-
-                </a>
-                <div class="flex-1">
-                  <a href="timeline-group.html"><h4 class="side-list-title"> Jesse Steeve</h4></a>
-                  <div class="side-list-info"> Updated 2 day ago </div>
-                </div>
-                <button class="button bg-primary-soft text-primary dark:text-white">Like</button>
-              </div>
-
-            </div>
-
-            <button class="bg-secondery w-full text-black py-1.5 font-medium px-3.5 rounded-md text-sm mt-3 dark:text-white">See all</button>
-
-          </div>
-
-          <!-- Groups You Manage  -->
-          <div class="bg-white rounded-xl shadow p-5 px-6 border1 dark:bg-dark2">
-
-            <div class="flex items-baseline justify-between text-black dark:text-white">
-              <h3 class="font-bold text-base"> Suggested pages </h3>
-              <a href="#" class="text-sm text-blue-500">See all</a>
-            </div>
-
-            <div class="side-list">
-
-              <div class="side-list-item">
-                <a href="timeline-group.html">
-
-                </a>
-                <div class="flex-1">
-                  <a href="timeline-group.html"><h4 class="side-list-title">  John Michael</h4></a>
-                  <div class="side-list-info"> Updated 1 week ago </div>
-                </div>
-                <button class="button bg-primary text-white">Like</button>
-              </div>
-              <div class="side-list-item">
-                <a href="timeline-group.html">
-
-                </a>
-                <div class="flex-1">
-                  <a href="timeline-group.html"><h4 class="side-list-title"> Martin Gray</h4></a>
-                  <div class="side-list-info"> Updated 4 week ago </div>
-                </div>
-                <button class="button bg-primary text-white">Like</button>
-              </div>
-              <div class="side-list-item">
-                <a href="timeline-group.html">
-
-                </a>
-                <div class="flex-1">
-                  <a href="timeline-group.html"><h4 class="side-list-title"> Monroe Parker</h4></a>
-                  <div class="side-list-info"> Updated 2 month ago </div>
-                </div>
-                <button class="button bg-primary text-white">Like</button>
-              </div>
 
 
             </div>

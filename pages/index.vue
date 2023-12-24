@@ -3,6 +3,8 @@
 import Chip from 'primevue/chip';
 import 'vue3-carousel/dist/carousel.css'
 import Carousel from 'primevue/carousel';
+import 'primevue/resources/themes/lara-light-teal/theme.css';
+
 
 
 import { ref } from "vue";
