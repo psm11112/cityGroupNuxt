@@ -112,9 +112,7 @@ async function getCity(statsId){
 
           <div class="page-heading p-2  lg:block md:p-1 lg:p-1 flex justify-between">
           <div>
-            <h1 class="page-title"> {{categoryName}}
-            {{loading}}
-            </h1>
+            <h1 class="page-title"> {{categoryName}}</h1>
           </div>
             <div class=" lg:hidden  bg-green-400 rounded-full p-2 ">
             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 256 256"><path fill="currentColor" d="M234.29 47.91A20 20 0 0 0 216 36H40a20 20 0 0 0-14.8 33.45l.12.14L92 140.75V216a20 20 0 0 0 31.1 16.64l32-21.33a20 20 0 0 0 8.9-16.65v-53.91l66.67-71.16l.12-.14a20 20 0 0 0 3.5-21.54Zm-88.88 77.58a19.93 19.93 0 0 0-5.41 13.68v53.35l-24 16v-69.35a19.93 19.93 0 0 0-5.41-13.68L49.23 60h157.54Z"></path></svg>
